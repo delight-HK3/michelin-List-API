@@ -5,7 +5,7 @@
 
 Framework : Spring boot 3.3.4
 Language : Java 17
-Database : MariaDB 10.9.2
+Database : MariaDB Server
 Server : AWS EC2, AWS API Gateway
 Tool : Visual Studio Code
 ```
