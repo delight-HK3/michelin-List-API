@@ -1,0 +1,18 @@
+/* DB 생성 */
+CREATE DATABASE `michelin` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci */;
+
+
+-- michelin.michelin_List_2024 definition
+
+CREATE TABLE `michelin_List_2024` (
+  `SEQ` int(11) NOT NULL AUTO_INCREMENT COMMENT '일련번호',
+  `MICHELIN_NM` varchar(100) DEFAULT NULL COMMENT '미슐랭명',
+  `FCLTY_NM` varchar(100) DEFAULT NULL COMMENT '시설명',
+  `RDNMADR_NM` varchar(100) DEFAULT NULL COMMENT '도로명주소',
+  `CTPRVN_ENG_NM` varchar(100) DEFAULT NULL COMMENT '시도영문명',
+  `FCLTY_LO` double DEFAULT NULL COMMENT '시설경도',
+  `FCLTY_LA` double DEFAULT NULL COMMENT '시설위도',
+  `STAR_CNT` int(11) DEFAULT NULL COMMENT '별 개수',
+  `EVALUATION_YEAR` int(11) DEFAULT NULL COMMENT '평가년도',
+  PRIMARY KEY (`SEQ`)
+) ENGINE=InnoDB AUTO_INCREMENT=30 DEFAULT CHARSET=utf8;
