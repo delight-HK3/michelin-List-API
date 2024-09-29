@@ -14,6 +14,7 @@ Pakaging : jar
 ```
 AWS 사양
 
+AWS 리전 : ap-northeast-2 (서울)
 인스턴스 유형 : t2.micro
 용량 : 8 GIB
 볼륨 유형 : gb2
