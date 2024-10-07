@@ -10,5 +10,4 @@ public class paramDTO {
     private Integer starCnt;         // 별 개수
     private Integer year;            // 획득년도
     private String ctprvnEngNm;      // 시도영문명 
-
 }   

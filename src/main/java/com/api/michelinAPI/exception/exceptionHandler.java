@@ -7,8 +7,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
+import org.springframework.web.servlet.resource.NoResourceFoundException;
 
 import com.api.michelinAPI.dto.errorResultDTO;
 
@@ -32,11 +32,25 @@ public class exceptionHandler {
      * @param request
      * @return
      */
-    @ResponseBody
     @ExceptionHandler(MethodArgumentNotValidException.class)
     public ResponseEntity<errorResultDTO> validError(MethodArgumentNotValidException e, HttpServletRequest request){
         log.warn("PARAMETER ERROR!!! url:{}, trace:{}",request.getRequestURI(), e.getStackTrace());
         errorResultDTO errorResult = new errorResultDTO("12", "PARAMETER ERROR");
+
+        return new ResponseEntity<>(errorResult, HttpStatus.BAD_REQUEST);
+    }
+
+    /**
+     * URL을 잘못 입력시 발동하는 Hander
+     * 
+     * @param e
+     * @param request
+     * @return
+     */
+    @ExceptionHandler(NoResourceFoundException.class)
+    public ResponseEntity<errorResultDTO> NoResourceFoundError(NoResourceFoundException e, HttpServletRequest request){
+        log.warn("NO RESOURCE ERROR!!! url:{}, trace:{}",request.getRequestURI(), e.getStackTrace());
+        errorResultDTO errorResult = new errorResultDTO("404", "NO RESOURCE ERROR");
 
         return new ResponseEntity<>(errorResult, HttpStatus.BAD_REQUEST);
     }

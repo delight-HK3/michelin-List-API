@@ -1,16 +1,24 @@
 package com.api.michelinAPI.controller;
 
+import java.util.List;
+
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.api.michelinAPI.dto.paramDTO;
+import com.api.michelinAPI.dto.ResultDTO;
+import com.api.michelinAPI.service.ResultService;
 
 @RestController
 public class maincontroller {
 
+    private final ResultService resultService;
 
+    maincontroller(ResultService resultService){
+        this.resultService = resultService;
+    }
 
     /**
      * api guide page
@@ -33,11 +41,11 @@ public class maincontroller {
      * @return
      */
     @RequestMapping(value="/api/michelin_list", method=RequestMethod.GET)
-    public String requestMethodName(paramDTO paramdto) throws Exception{
+    public List<ResultDTO> requestMethodName(paramDTO paramdto) {
 
-        System.out.println(paramdto);
+        List<ResultDTO> result = resultService.searchList(paramdto);
 
-        return "API test";
+        return result;
     }
     
 }
