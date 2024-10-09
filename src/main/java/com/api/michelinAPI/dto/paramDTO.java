@@ -1,8 +1,12 @@
 package com.api.michelinAPI.dto;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
+@NoArgsConstructor 
+@AllArgsConstructor
 public class paramDTO {
     
     private Integer row;             // 데이터 행 수
@@ -10,4 +14,5 @@ public class paramDTO {
     private Integer starCnt;         // 별 개수
     private Integer year;            // 획득년도
     private String ctprvnEngNm;      // 시도영문명 
+
 }   

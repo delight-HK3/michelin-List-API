@@ -2,9 +2,9 @@
 CREATE DATABASE `michelin` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci */;
 
 
--- michelin.michelin_List_2024 definition
+-- michelin.michelin_List definition
 
-CREATE TABLE `michelin_List_2024` (
+CREATE TABLE `michelin_List` (
   `SEQ` int(11) NOT NULL AUTO_INCREMENT COMMENT '일련번호',
   `MICHELIN_NM` varchar(100) DEFAULT NULL COMMENT '미슐랭명',
   `FCLTY_NM` varchar(100) DEFAULT NULL COMMENT '시설명',

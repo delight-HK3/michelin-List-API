@@ -42,8 +42,15 @@ public class maincontroller {
      */
     @RequestMapping(value="/api/michelin_list", method=RequestMethod.GET)
     public List<ResultDTO> requestMethodName(paramDTO paramdto) {
+        //ModelAndView mav = new ModelAndView();
+
+        System.out.println("=========================");
+        System.out.println(paramdto);
+        System.out.println("=========================");
 
         List<ResultDTO> result = resultService.searchList(paramdto);
+        //mav.addObject("result", result);
+        //mav.setViewName("jsonView");
 
         return result;
     }

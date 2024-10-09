@@ -1,11 +1,12 @@
 package com.api.michelinAPI.service;
 
-import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.stereotype.Service;
 
 import com.api.michelinAPI.dto.paramDTO;
+import com.api.michelinAPI.entity.ResultEntity;
 import com.api.michelinAPI.dto.ResultDTO;
 import com.api.michelinAPI.repository.ResultRepository;
 
@@ -24,17 +25,15 @@ public class ResultServiceImpl  implements ResultService{
     @Override
     public List<ResultDTO> searchList(paramDTO paramdto) {
         
-        String tableYear = String.valueOf(paramdto.getYear()).equals("null") ? "2024" : String.valueOf(paramdto.getYear());
-        String tableNm = "michelin_List_"+tableYear;
+        List<ResultEntity> resultList = resultRepository.findMichelinList(paramdto);
+        List<ResultDTO> dtoList = new ArrayList<>();
 
-        System.out.println("========================");
-        System.out.println(tableNm);
-        System.out.println("========================");
-
-        List<ResultDTO> result = null;
-        //List<resultDTO> result = resultRepository.result(tableNm);
-
-        return result;
+        for(int i = 0; i < resultList.size(); i++){
+            ResultDTO dto = ResultDTO.toListDTO(resultList.get(i));
+            dtoList.add(dto);
+        }
+    
+        return dtoList;
     }
     
 }
