@@ -5,13 +5,12 @@ import java.util.List;
 import org.springframework.stereotype.Repository;
 
 import com.api.michelinAPI.dto.paramDTO;
-import com.api.michelinAPI.entity.QResultEntity;
-import com.api.michelinAPI.entity.ResultEntity;
+
+import com.api.michelinAPI.entity.MichelinEntity;
+import com.api.michelinAPI.entity.QMichelinEntity;
 import com.querydsl.core.types.dsl.BooleanExpression;
-import com.querydsl.jpa.impl.JPAQuery;
 import com.querydsl.jpa.impl.JPAQueryFactory;
 
-import jakarta.persistence.EntityManager;
 import lombok.RequiredArgsConstructor;
 
 @Repository
@@ -20,31 +19,40 @@ public class ResultRepository{
     
     // QueryDSL
     private final JPAQueryFactory queryFactory;
-    private final QResultEntity resultEntity;
-
-    // JPQL
-    //private final EntityManager em;
     
-    //@Query(value="select * from :tableNm where EVALUATION_YEAR = :#{#dto.year}",nativeQuery = true)
-    //List<ResultEntity> searchListBy(@Param("dto") paramDTO dto, String tableNm);
+    // QMichelinEntity 등록
+    QMichelinEntity michelinEntity = QMichelinEntity.michelinEntity; 
 
-    public List<ResultEntity> findMichelinList(paramDTO dto){
-        return queryFactory.from(resultEntity) 
-                            .select(resultEntity)
+    public List<MichelinEntity> findMichelinList(paramDTO dto){
+        return queryFactory.from(michelinEntity) 
+                            .select(michelinEntity)
                             .where(
-                                allSearch(dto)
+                                equalStarCnt(dto.getStarCnt())
+                                , equalFcltyNm(dto.getFcltyNm())
+                                , equalYear(dto.getYear())
+                                , equalCtprvnEngNm(dto.getCtprvnEngNm())
                             )
-                            .fetch();
+                            .limit(dto.getRow())
+                            .fetch(); 
     }
 
     // 별개수 지정 메서드
-    private BooleanExpression equalStarCnt(paramDTO dto){
-        return dto.getStarCnt() != null ? resultEntity.starCnt.eq(dto.getStarCnt()) : null;
-    }
+    private BooleanExpression equalStarCnt(Integer starCnt){
+        return starCnt != null ? michelinEntity.starCnt.eq(starCnt) : null;
+    } 
 
-    // 전체 검색조건
-    private BooleanExpression allSearch(paramDTO dto){
-        return equalStarCnt(dto);
-    }
+    // 레스토랑이름 메서드
+    private BooleanExpression equalFcltyNm(String fcltyNm){
+        return fcltyNm != null ? michelinEntity.fcltyNm.eq(fcltyNm) : null;
+    } 
     
+    // 년도 체크 메서드
+    private BooleanExpression equalYear(Integer year){
+        return year != null ? michelinEntity.year.eq(year) : null;
+    } 
+
+    // 시도영문명 메서드
+    private BooleanExpression equalCtprvnEngNm(String ctprvnEngNm){
+        return ctprvnEngNm != null ? michelinEntity.ctprvnEngNm.eq(ctprvnEngNm) : null;
+    } 
 }

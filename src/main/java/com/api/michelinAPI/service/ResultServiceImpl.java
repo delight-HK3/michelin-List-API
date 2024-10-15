@@ -6,7 +6,7 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 
 import com.api.michelinAPI.dto.paramDTO;
-import com.api.michelinAPI.entity.ResultEntity;
+import com.api.michelinAPI.entity.MichelinEntity;
 import com.api.michelinAPI.dto.ResultDTO;
 import com.api.michelinAPI.repository.ResultRepository;
 
@@ -25,7 +25,7 @@ public class ResultServiceImpl  implements ResultService{
     @Override
     public List<ResultDTO> searchList(paramDTO paramdto) {
         
-        List<ResultEntity> resultList = resultRepository.findMichelinList(paramdto);
+        List<MichelinEntity> resultList = resultRepository.findMichelinList(paramdto);
         List<ResultDTO> dtoList = new ArrayList<>();
 
         for(int i = 0; i < resultList.size(); i++){
