@@ -11,11 +11,15 @@ import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
 
-@Setter
+/**
+ * 대한민국 미쉐린 가이드 Entity
+ */
+
 @Getter
+@Setter
 @Entity
-@Table(name = "michelin_List")
-public class MichelinEntity {
+@Table(name = "michelin_List_kr")
+public class MichelinKrEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -49,11 +53,11 @@ public class MichelinEntity {
     
     @Column(name = "STAR_CNT")
     @Comment(value = "별 개수")
-    private Integer starCnt;                // 별 개수
+    private int starCnt;                // 별 개수
     
     @Column(name = "EVALUATION_YEAR")
     @Comment(value = "년도")
-    private Integer year;                   // 년도
+    private int year;                   // 년도
 
     @Column(name = "FOOD_CATG")
     @Comment(value = "식사카테고리")

@@ -5,27 +5,27 @@ import java.util.List;
 import org.springframework.stereotype.Repository;
 
 import com.api.michelinAPI.dto.paramDTO;
-
-import com.api.michelinAPI.entity.MichelinEntity;
-import com.api.michelinAPI.entity.QMichelinEntity;
+import com.api.michelinAPI.entity.MichelinKrEntity;
+import com.api.michelinAPI.entity.QMichelinKrEntity;
 import com.querydsl.core.types.dsl.BooleanExpression;
 import com.querydsl.jpa.impl.JPAQueryFactory;
 
-import lombok.RequiredArgsConstructor;
-
 @Repository
-@RequiredArgsConstructor
-public class ResultRepository{
+public class MichelinKrRepository{
     
     // QueryDSL
     private final JPAQueryFactory queryFactory;
     
-    // QMichelinEntity 등록
-    QMichelinEntity michelinEntity = QMichelinEntity.michelinEntity; 
+    MichelinKrRepository(JPAQueryFactory queryFactory){   
+        this.queryFactory = queryFactory;
+    }
 
-    public List<MichelinEntity> findMichelinList(paramDTO dto){
-        return queryFactory.from(michelinEntity) 
-                            .select(michelinEntity)
+    // QMichelinKrEntity 등록
+    QMichelinKrEntity michelinKrEntity = QMichelinKrEntity.michelinKrEntity;
+    
+    public List<MichelinKrEntity> findMichelinList(paramDTO dto){
+        return queryFactory.from(michelinKrEntity) 
+                            .select(michelinKrEntity)
                             .where(
                                 equalStarCnt(dto.getStarCnt())
                                 , equalFcltyNm(dto.getFcltyNm())
@@ -36,23 +36,23 @@ public class ResultRepository{
                             .fetch(); 
     }
 
-    // 별개수 지정 메서드
+    // 별개수 체크 메서드
     private BooleanExpression equalStarCnt(Integer starCnt){
-        return starCnt != null ? michelinEntity.starCnt.eq(starCnt) : null;
+        return starCnt != null ? michelinKrEntity.starCnt.eq(starCnt) : null;
     } 
 
-    // 레스토랑이름 메서드
+    // 레스토랑이름 체크 메서드
     private BooleanExpression equalFcltyNm(String fcltyNm){
-        return fcltyNm != null ? michelinEntity.fcltyNm.eq(fcltyNm) : null;
+        return fcltyNm != null ? michelinKrEntity.fcltyNm.eq(fcltyNm) : null;
     } 
     
     // 년도 체크 메서드
     private BooleanExpression equalYear(Integer year){
-        return year != null ? michelinEntity.year.eq(year) : null;
+        return year != null ? michelinKrEntity.year.eq(year) : null;
     } 
 
-    // 시도영문명 메서드
+    // 시도영문명 체크 메서드
     private BooleanExpression equalCtprvnEngNm(String ctprvnEngNm){
-        return ctprvnEngNm != null ? michelinEntity.ctprvnEngNm.eq(ctprvnEngNm) : null;
+        return ctprvnEngNm != null ? michelinKrEntity.ctprvnEngNm.eq(ctprvnEngNm) : null;
     } 
 }

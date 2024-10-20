@@ -10,6 +10,7 @@ import org.springframework.web.servlet.ModelAndView;
 import com.api.michelinAPI.dto.paramDTO;
 import com.api.michelinAPI.dto.ResultDTO;
 import com.api.michelinAPI.service.ResultService;
+import com.fasterxml.jackson.core.JsonProcessingException;
 
 @RestController
 public class maincontroller {
@@ -39,20 +40,16 @@ public class maincontroller {
      * 
      * @param request
      * @return
+     * @throws JsonProcessingException 
      */
     @RequestMapping(value="/api/michelin_list", method=RequestMethod.GET)
-    public List<ResultDTO> requestMethodName(paramDTO paramdto) {
-        //ModelAndView mav = new ModelAndView();
+    public List<ResultDTO> requestMethodName(paramDTO paramdto) throws JsonProcessingException {
 
-        System.out.println("=========================");
-        System.out.println(paramdto);
-        System.out.println("=========================");
+        if(paramdto.getCountryNm().equals(null) || paramdto.getRow() == null){
+            new NullPointerException();
+        }
 
-        List<ResultDTO> result = resultService.searchList(paramdto);
-        //mav.addObject("result", result);
-        //mav.setViewName("jsonView");
-
-        return result;
+        return resultService.searchList(paramdto);
     }
     
 }
