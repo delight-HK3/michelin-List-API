@@ -14,10 +14,11 @@ import lombok.ToString;
 @AllArgsConstructor // 모든 필드 값을 파라미터로 받는 생성자를 생성
 public class paramDTO {
     
-    private Integer row;             // 데이터 행 수
-    private String fcltyNm;          // 레스토랑이름
-    private Integer starCnt;         // 별 개수
-    private Integer year;            // 획득년도
-    private String ctprvnEngNm;      // 시도영문명 
+    private Integer row;            // 데이터 행 수
+    private String countryNm;       // 국가이름
+    private String fcltyNm;         // 레스토랑이름
+    private Integer starCnt;        // 별 개수
+    private Integer year;           // 획득년도
+    private String ctprvnEngNm;     // 시도영문명 
 
 }   
