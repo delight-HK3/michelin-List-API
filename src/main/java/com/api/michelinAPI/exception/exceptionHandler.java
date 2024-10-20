@@ -84,8 +84,23 @@ public class exceptionHandler {
     public ResponseEntity<errorResultDTO> handleSQLException(Exception e, HttpServletRequest request){
         log.warn("DB ERROR!!! url:{}, trace:{}",request.getRequestURI(), e.getStackTrace());
         errorResultDTO errorResult = new errorResultDTO("02", "DB ERROR");
-
+        
         return new ResponseEntity<>(errorResult, HttpStatus.INTERNAL_SERVER_ERROR);
+    }
+
+    /**
+     * 데이터베이스 조회시 데이터가 없으면 발동하는 Hander
+     * 
+     * @param e
+     * @param request
+     * @return
+     */
+    @ExceptionHandler(NoDataException.class)
+    public ResponseEntity<errorResultDTO> handleNoDataException(NoDataException e, HttpServletRequest request) {
+        log.warn("DB ERROR!!! url:{}, trace:{}",request.getRequestURI(), e.getStackTrace());
+        errorResultDTO errorResult = new errorResultDTO("03", "NODATA ERROR");
+
+        return new ResponseEntity<>(errorResult, HttpStatus.NOT_FOUND);
     }
 
 }
