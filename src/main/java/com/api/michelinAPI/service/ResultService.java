@@ -25,35 +25,35 @@ public class ResultService{
     }
 
     /**
-     * 데이터 조회
+     * 대한민국 데이터 조회
      */
-    public List<ResultDTO> searchList(paramDTO paramdto) {
-        
+    public List<ResultDTO> searchKrList(paramDTO paramdto) {
         List<ResultDTO> dtoList = new ArrayList<>();
-
-        if(paramdto.getCountryNm().equals("kr")){ // 대한민국 리스트 조회
-            List<MichelinKrEntity> resultList = michelinKrRepository.findMichelinList(paramdto);
-            if(resultList.size() == 0){ throw new NoDataException(); }
+        List<MichelinKrEntity> resultList = michelinKrRepository.findMichelinList(paramdto);
+        if(resultList.size() == 0){ throw new NoDataException(); }
             
-            for(int i = 0; i < resultList.size(); i++){
-                ResultDTO dto = ResultDTO.toListKrDTO(resultList.get(i));
-                dtoList.add(dto);
-            }
-        } 
-
-        else if(paramdto.getCountryNm().equals("jp")){ // 일본 리스트 조회
-            List<MichelinJpEntity> resultList = michelinJpRepository.findMichelinList(paramdto);
-            if(resultList.size() == 0){ throw new NoDataException(); }
-
-            for(int i = 0; i < resultList.size(); i++){
-                ResultDTO dto = ResultDTO.toListJpDTO(resultList.get(i));
-                dtoList.add(dto);
-            }
-        } else {
-            throw new NoDataException();
+        for(int i = 0; i < resultList.size(); i++){
+            ResultDTO dto = ResultDTO.toListKrDTO(resultList.get(i));
+            dtoList.add(dto);
         }
 
         return dtoList;
     }
     
+    /**
+     * 일본 데이터 조회
+     */
+    public List<ResultDTO> searchJpList(paramDTO paramdto) {
+
+        List<ResultDTO> dtoList = new ArrayList<>();
+        List<MichelinJpEntity> resultList = michelinJpRepository.findMichelinList(paramdto);
+        if(resultList.size() == 0){ throw new NoDataException(); }
+            
+        for(int i = 0; i < resultList.size(); i++){
+            ResultDTO dto = ResultDTO.toListJpDTO(resultList.get(i));
+            dtoList.add(dto);
+        }
+
+        return dtoList;
+    }
 }

@@ -36,20 +36,36 @@ public class maincontroller {
     }
     
     /**
-     * api 요청
+     * 대한민국 데이터요청
      * 
      * @param request
      * @return
      * @throws JsonProcessingException 
      */
-    @RequestMapping(value="/api/michelin_list", method=RequestMethod.GET)
-    public List<ResultDTO> requestMethodName(paramDTO paramdto) throws JsonProcessingException {
+    @RequestMapping(value="/kr/michelin_list", method=RequestMethod.GET)
+    public List<ResultDTO> michelinKrList(paramDTO paramdto) throws JsonProcessingException {
 
-        if(paramdto.getCountryNm().equals(null) || paramdto.getRow() == null){
+        if(paramdto.getRow() == null){
             new NullPointerException();
         }
 
-        return resultService.searchList(paramdto);
+        return resultService.searchKrList(paramdto);
     }
     
+    /**
+     * 일본 데이터요청
+     * 
+     * @param request
+     * @return
+     * @throws JsonProcessingException 
+     */
+    @RequestMapping(value="/jp/michelin_list", method=RequestMethod.GET)
+    public List<ResultDTO> michelinJpList(paramDTO paramdto) throws JsonProcessingException {
+
+        if(paramdto.getRow() == null){
+            new NullPointerException();
+        }
+
+        return resultService.searchJpList(paramdto);
+    }
 }
