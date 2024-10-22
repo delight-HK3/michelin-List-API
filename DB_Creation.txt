@@ -1,0 +1,34 @@
+/* DB 생성 */
+CREATE DATABASE `michelin` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci */;
+
+-- michelin.michelin_list_kr definition
+
+CREATE TABLE `michelin_list_kr` (
+  `seq` int(11) NOT NULL AUTO_INCREMENT COMMENT '일련번호',
+  `ctprvn_eng_nm` varchar(255) DEFAULT NULL COMMENT '시도영문명',
+  `fclty_lo` double DEFAULT NULL COMMENT '위도',
+  `fclty_la` double DEFAULT NULL COMMENT '경도',
+  `fclty_nm` varchar(255) DEFAULT NULL COMMENT '레스토랑이름',
+  `michelin_nm` varchar(255) DEFAULT NULL COMMENT '미슐랭명',
+  `rdnmadr_nm` varchar(255) DEFAULT NULL COMMENT '도로명주소',
+  `star_cnt` int(11) DEFAULT NULL COMMENT '별 개수',
+  `evaluation_year` int(11) DEFAULT NULL COMMENT '년도',
+  `food_catg` varchar(100) DEFAULT NULL COMMENT '음식카테고리',
+  PRIMARY KEY (`seq`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+-- michelin.michelin_list_jp definition
+
+CREATE TABLE `michelin_list_jp` (
+  `seq` int(11) NOT NULL AUTO_INCREMENT COMMENT '일련번호',
+  `ctprvn_eng_nm` varchar(255) DEFAULT NULL COMMENT '시도영문명',
+  `fclty_lo` double DEFAULT NULL COMMENT '위도',
+  `fclty_la` double DEFAULT NULL COMMENT '경도',
+  `fclty_nm` varchar(255) DEFAULT NULL COMMENT '레스토랑이름',
+  `michelin_nm` varchar(255) DEFAULT NULL COMMENT '미슐랭명',
+  `rdnmadr_nm` varchar(255) DEFAULT NULL COMMENT '도로명주소',
+  `star_cnt` int(11) DEFAULT NULL COMMENT '별 개수',
+  `evaluation_year` int(11) DEFAULT NULL COMMENT '년도',
+  `food_catg` varchar(100) DEFAULT NULL COMMENT '음식카테고리',
+  PRIMARY KEY (`seq`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;

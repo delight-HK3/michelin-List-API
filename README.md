@@ -1,93 +1,74 @@
-# michelin-list-API-lab
+# michelin List API
 
-
-
-## Getting started
-
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
-
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
-
-## Add your files
-
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
-
+### API 구성
 ```
-cd existing_repo
-git remote add origin https://gitlab.com/lab-michelin-api/michelin-list-api-lab.git
-git branch -M main
-git push -uf origin main
+Framework : Spring boot 3.3.4
+Language : Java 17
+Database : MariaDB Server
+Server : AWS EC2, AWS API Gateway
+Tool : Visual Studio Code
+Pakaging : jar 
 ```
 
-## Integrate with your tools
+```
+AWS 사양
 
-- [ ] [Set up project integrations](https://gitlab.com/lab-michelin-api/michelin-list-api-lab/-/settings/integrations)
+AWS 리전 : ap-northeast-2 (서울)
+인스턴스 유형 : t2.micro
+용량 : 8 GIB
+볼륨 유형 : gb2
+```
+<br>
 
-## Collaborate with your team
+### API 소개
+미쉐린 공식 가이드 사이트 및 네이버지도에 미쉐린 및 빕 구르망으로 검색하면 위치는 확인 할 수 있으나 미쉐린 가이드에 등재된 좌표
+데이터는 없었습니다, 그리고 미쉐린 가이드나 네이버지도에서는 최신자료만 확인이 가능하기에 과거에 어떤 레스토랑이 미쉐린 스타를 받았는지는
+따로 조사를 해야만 알 수 있습니다. 거기서 이렇게 API로 만들고 데이터를 관리하면 앞으로의 활용가치가 분명생길 것 이라고 판단하여 개발하게 되었습니다.
+API요청방식은 [공공데이터](https://www.data.go.kr/)의 openAPI 호출방식과 유사하게 HTTP API방식으로 설계했습니다, 현재는 대한민국 데이터만 출력이 되지만
+앞으로 일본 및 아시아권 데이터출력이 현재방향입니다.
+<br><br>
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Set auto-merge](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
+### API 사용가이드
+#### 파라미터
 
-## Test and Deploy
+| 파라미터명 | 설명 | 데이터타입 | 필수여부 | 기타 |
+| ------ | ------ | ----- | ----- | ----- |
+| row | 불러올 행 수 | Integer | O |
+| fcltyNm | 레스토랑 이름 | String | X |
+| starCnt | 별 개수 | Integer | X | 3 : 미쉐린 3스타 <br> 2 : 미쉐린 2스타 <br> 1 : 미쉐린 1스타 <br> 0 : 빕 구르망
+| year | 획득년도 | Integer | X |
+| ctprvnEngNm | 시도영문명 | String | X |
 
-Use the built-in continuous integration in GitLab.
+#### URL 분기
+| URL 분기 | 설명 |
+| ------ | ------ |
+| /kr/michelin_list | 대한민국 미쉐린 데이터 출력 |
+| /jp/michelin_list | 일본 미쉐린 데이터 출력 |
 
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+#### 사용예시
+```
+https://4m2jy6af81.execute-api.ap-northeast-2.amazonaws.com/kr/michelin-list?row=100&starCnt=1&year=2024
+```
+해석) 대한민국에서 2024년도에 선정되었고 미쉐린별을 1개만 받은 레스토랑을 100건 조회
 
-***
+<br>
 
-# Editing this README
+### 참고자료
+* 미쉐린 레스토랑 가이드(데이터 수집) : <https://guide.michelin.com/kr/ko> 
+* AWS 구축 및 기본 세팅 : <https://velog.io/@osmdark/1.AWS%EC%84%9C%EB%B2%84-%EA%B5%AC%EC%B6%95%ED%95%98%EA%B8%B0>
+* AWS 기본적인 개념 및 설명 : <https://velog.io/@server30sopt/AWS-EC2-%EA%B0%9C%EB%85%90-%EC%A0%95%EB%A6%AC>
+* AWS API Gateway 사용법 : <https://fransoaardi.github.io/posts/aws_api_gateway_rest_http/>
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thanks to [makeareadme.com](https://www.makeareadme.com/) for this template.
+<br>
 
-## Suggestions for a good README
+### 패치노트
+---
+#### v.1.1 (2024.10.21)
+1. 국가별 호출을 파라미터 변수에서 url에 삽입하여 구분을 짓는 방식으로 변경했습니다.
+2. API호출시 데이터조회 부분코드를 수정했습니다.
+3. 일본 미쉐린 데이터 DDL 쿼리문을 추가헸습니다.
 
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
+---
+#### v.1.0 (2024.10.19)
+1. 일본 미쉐린 데이터도 확인이 가능하도록 테이블을 추가했습니다.
 
-## Name
-Choose a self-explaining name for your project.
-
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
-
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
-
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
-
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
-
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
-
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
-
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
-
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
-
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
-
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
-
-## License
-For open source projects, say how it is licensed.
-
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.

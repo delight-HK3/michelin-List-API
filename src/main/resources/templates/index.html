@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout/default_layout}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>michelin 2024 List</title>
+
+    <link rel="stylesheet" th:href="@{/css/bootstrap.css}" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script th:src="@{/js/bootstrap.js}"></script>
+
+</head>
+<body>
+    <div class="container">
+        <br><br><br>
+
+        <figure class="text-center">
+            <blockquote class="blockquote">
+                <h1>Michelin Guide API</h1>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+                <cite title="Source Title">Good Taste Good Service</cite>
+            </figcaption>
+        </figure>
+
+        <br>
+        <img th:src=@{/img/michelin.png} class="rounded mx-auto d-block" alt="michelin_img">
+        <br>
+        
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">미쉐린 가이드 소개</h5>
+                        <br>
+                        <p class="card-text">
+                            세계적으로 유명한 미쉐린 가이드의 역사를 확인해보세요<br><br>
+                            <a href="https://guide.michelin.com/kr/ko/about-us" class="alert-link" target='_blank'>미쉐린 가이드의 역사</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">대한민국 미쉐린 가이드 목록</h5>
+                        <br>
+                        <p class="card-text">
+                            대한민국의 미쉐린 스타를 받은 영광의 레스토랑을 지금 확인해보세요<br><br>
+                            <a href="https://guide.michelin.com/kr/ko/selection/south-korea/restaurants" class="alert-link" target='_blank'>대한민국 미쉐린 가이드 목록</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <br><br><br>
+</body>
+</html>
