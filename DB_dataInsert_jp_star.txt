@@ -1,0 +1,60 @@
+INSERT INTO michelin.michelin_list_jp
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
+VALUES(1, 'tokyo', 35.6658, 139.748, 'Kanda', '3스타 미쉐린', '1F, Toranomon Hills Residential Tower, 1-1-1 Atago, Minato-ku', 3, 2024, '일식');
+INSERT INTO michelin.michelin_list_jp
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
+VALUES(2, 'tokyo', 35.655993, 139.733551, 'Azabu Kadowaki', '3스타 미쉐린', '2-7-2 Azabujuban, Minato-ku', 3, 2024, '일식');
+INSERT INTO michelin.michelin_list_jp
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
+VALUES(3, 'tokyo', 35.700825, 139.740832, 'Kohaku', '3스타 미쉐린', '3-5-5 Kagurazaka, Shinjuku-ku', 3, 2024, '일식');
+INSERT INTO michelin.michelin_list_jp
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
+VALUES(4, 'tokyo', 35.678083, 139.767155, 'SÉZANNE', '3스타 미쉐린', '7F, Four Seasons Hotel Tokyo at Marunouchi, 1-11-1 Marunouchi, Chiyoda-ku', 3, 2024, '컨템퍼러리');
+INSERT INTO michelin.michelin_list_jp
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
+VALUES(5, 'tokyo', 35.669269, 139.759203, 'Harutaka', '3스타 미쉐린', '6F, 8-3-1 Ginza, Chuo-ku', 3, 2024, '스시');
+INSERT INTO michelin.michelin_list_jp
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
+VALUES(6, 'tokyo', 35.669667, 139.761203, 'L`OSIER', '3스타 미쉐린', '7-5-5 Ginza, Chuo-ku', 3, 2024, '프렌치');
+INSERT INTO michelin.michelin_list_jp
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
+VALUES(7, 'tokyo', 35.701212, 139.739466, 'Kagurazaka Ishikawa', '3스타 미쉐린', '5-37 Kagurazaka, Shinjuku-ku', 3, 2024, '일식');
+INSERT INTO michelin.michelin_list_jp
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
+VALUES(8, 'tokyo', 35.673583, 139.759193, 'RyuGin', '3스타 미쉐린', '7F, Tokyo Midtown Hibiya, 1-1-2 Yurakucho, Chiyoda-ku', 3, 2024, '일식');
+INSERT INTO michelin.michelin_list_jp
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
+VALUES(9, 'tokyo', 35.660299, 139.719454, 'L`Effervescence', '3스타 미쉐린', '2-26-4 Nishiazabu, Minato-ku', 3, 2024, '프렌치');
+INSERT INTO michelin.michelin_list_jp
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
+VALUES(10, 'tokyo', 35.641903, 139.714528, 'Joël Robuchon', '3스타 미쉐린', 'Yebisu Garden Place, 1-13-1 Mita, Meguro-ku', 3, 2024, '프렌치');
+INSERT INTO michelin.michelin_list_jp
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
+VALUES(11, 'tokyo', 35.624038, 139.732977, 'Quintessence', '3스타 미쉐린', '1F, Garden City Shinagawa Gotenyama, 6-7-29 Kitashinagawa, Shinagawa-ku', 3, 2024, '프렌치');
+INSERT INTO michelin.michelin_list_jp
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
+VALUES(12, 'tokyo', 35.649578, 139.728395, 'Sazenka', '3스타 미쉐린', '4-7-5 Minamiazabu, Minato-ku', 3, 2024, '중식');
+INSERT INTO michelin.michelin_list_jp
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
+VALUES(13, 'osaka', 34.673353, 135.507205, 'Taian', '3스타 미쉐린', '1-21-2 Shimanouchi, Chuo-ku', 3, 2024, '일식');
+INSERT INTO michelin.michelin_list_jp
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
+VALUES(14, 'kyoto', 35.011355, 135.786742, 'Hyotei', '3스타 미쉐린', '35 Nanzenji Kusagawacho, Sakyo-ku', 3, 2024, '일식');
+INSERT INTO michelin.michelin_list_jp
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
+VALUES(15, 'osaka', 34.688612, 135.496084, 'HAJIME', '3스타 미쉐린', '1-9-11 Edobori, Nishi-ku', 3, 2024, '이노베이티브');
+INSERT INTO michelin.michelin_list_jp
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
+VALUES(16, 'kyoto', 35.001535, 135.782079, 'Kikunoi Honten', '3스타 미쉐린', '459 Shimokawaracho, Higashiyama-ku', 3, 2024, '일식');
+INSERT INTO michelin.michelin_list_jp
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
+VALUES(17, 'kyoto', 35.010397, 135.765083, 'Isshisoden Nakamura', '3스타 미쉐린', '136 Matsushitacho, Nakagyo-ku', 3, 2024, '일식');
+INSERT INTO michelin.michelin_list_jp
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
+VALUES(18, 'kyoto', 35.002993, 135.782364, 'Mizai', '3스타 미쉐린', '613 Maruyamacho, Higashiyama-ku', 3, 2024, '일식');
+INSERT INTO michelin.michelin_list_jp
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
+VALUES(19, 'kyoto', 34.998881, 135.775049, 'Gion Sasaki', '3스타 미쉐린', '566-27 Komatsucho, Higashiyama-ku', 3, 2024, '일식');
+INSERT INTO michelin.michelin_list_jp
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
+VALUES(20, 'osaka', 34.770287, 135.501289, 'Kashiwaya Osaka Senriyama', '3스타 미쉐린', '2-5-18 Senriyamanishi, Suita', 3, 2024, '일식');

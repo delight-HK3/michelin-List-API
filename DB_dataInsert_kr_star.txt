@@ -1,102 +1,102 @@
-INSERT INTO michelin.michelin_List
-(seq, ctprvn_eng_nm, fclty_la, fclty_lo, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(1, 'seoul', 127.04355, 37.52437, '권숙수', '2스타 미쉐린', '서울특별시 강남구 압구정로 80길 37, 4층', 2, 2024, '한식');
-INSERT INTO michelin.michelin_List
-(seq, ctprvn_eng_nm, fclty_la, fclty_lo, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(2, 'seoul', 127.04426, 37.52535, '밍글스', '2스타 미쉐린', '서울특별시 강남구 도산대로 67길 19, 2층', 2, 2024, '한식');
-INSERT INTO michelin.michelin_List
-(seq, ctprvn_eng_nm, fclty_la, fclty_lo, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(3, 'seoul', 127.00517, 37.555813, '라연', '2스타 미쉐린', '서울특별시 중구 동호로 249, 신라호텔 23층', 2, 2024, '한식');
-INSERT INTO michelin.michelin_List
-(seq, ctprvn_eng_nm, fclty_la, fclty_lo, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(4, 'seoul', 127.01903, 37.51933, '스와니예', '2스타 미쉐린', '서울특별시 강남구 강남대로 652 신사스퀘어 2층 201호', 2, 2024, '이노베이티브');
-INSERT INTO michelin.michelin_List
-(seq, ctprvn_eng_nm, fclty_la, fclty_lo, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(5, 'seoul', 127.04193, 37.52559, '코지마', '2스타 미쉐린', '서울특별시 강남구 압구정로 60길 21, 분더샵 6층', 2, 2024, '스시');
-INSERT INTO michelin.michelin_List
-(seq, ctprvn_eng_nm, fclty_la, fclty_lo, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(6, 'seoul', 127.04502, 37.52206, '미토우', '2스타 미쉐린', '서울특별시 강남구 도산대로 70길 24', 2, 2024, '일식');
-INSERT INTO michelin.michelin_List
-(seq, ctprvn_eng_nm, fclty_la, fclty_lo, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(7, 'seoul', 127.02602, 37.51346, '알라 프리마', '2스타 미쉐린', '서울특별시 강남구 학동로 17길 13', 2, 2024, '이노베이티브');
-INSERT INTO michelin.michelin_List
-(seq, ctprvn_eng_nm, fclty_la, fclty_lo, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(8, 'seoul', 127.0418, 37.5036, '레스토랑 알렌', '2스타 미쉐린', '서울특별시 강남구 테헤란로 231, 센터필드 East 2층 E205호', 2, 2024, '컨템퍼러리');
-INSERT INTO michelin.michelin_List
-(seq, ctprvn_eng_nm, fclty_la, fclty_lo, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(9, 'seoul', 127.041069, 37.525584, '정식당', '2스타 미쉐린', '서울특별시 강남구 선릉로 158길 11', 2, 2024, '컨템퍼러리');
-INSERT INTO michelin.michelin_List
-(seq, ctprvn_eng_nm, fclty_la, fclty_lo, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(10, 'busan', 129.11976, 35.13162, '팔레트', '1스타 미쉐린', '부산광역시 남구 분포로 66-30 3층', 1, 2024, '컨템퍼러리');
-INSERT INTO michelin.michelin_List
-(seq, ctprvn_eng_nm, fclty_la, fclty_lo, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(11, 'seoul', 126.97949, 37.55983, '라망 시크레', '1스타 미쉐린', '서울특별시 중구 퇴계로 67, 레스케이프 호텔 26층', 1, 2024, '컨템퍼러리');
-INSERT INTO michelin.michelin_List
-(seq, ctprvn_eng_nm, fclty_la, fclty_lo, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(12, 'seoul', 127.03906, 37.52416, '윤서울', '1스타 미쉐린', '서울특별시 강남구 선릉로 805', 1, 2024, '한식');
-INSERT INTO michelin.michelin_List
-(seq, ctprvn_eng_nm, fclty_la, fclty_lo, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(13, 'seoul', 127.00247, 37.5604, '호빈', '1스타 미쉐린', '서울특별시 중구 동호로 287, 앰배서더 서울 풀만 2층', 1, 2024, '중식');
-INSERT INTO michelin.michelin_List
-(seq, ctprvn_eng_nm, fclty_la, fclty_lo, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(14, 'seoul', 127.05429, 37.52237, '세븐스도어', '1스타 미쉐린', '서울특별시 강남구 학동로 97길 41, 4층', 1, 2024, '컨템퍼러리');
-INSERT INTO michelin.michelin_List
-(seq, ctprvn_eng_nm, fclty_la, fclty_lo, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(15, 'seoul', 127.034877, 37.527581, '하네', '1스타 미쉐린', '서울특별시 강남구 언주로 172길 14', 1, 2024, '스시');
-INSERT INTO michelin.michelin_List
-(seq, ctprvn_eng_nm, fclty_la, fclty_lo, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(16, 'seoul', 127.05519, 37.52083, '코자차', '1스타 미쉐린', '서울특별시 강남구 학동로 97길 17', 1, 2024, '아시안');
-INSERT INTO michelin.michelin_List
-(seq, ctprvn_eng_nm, fclty_la, fclty_lo, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(17, 'seoul', 127.03814, 37.51866, '빈호', '1스타 미쉐린', '서울특별시 강남구 학동로 43길 38, 논현웰스톤 162호', 1, 2024, '컨템퍼러리');
-INSERT INTO michelin.michelin_List
-(seq, ctprvn_eng_nm, fclty_la, fclty_lo, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(18, 'seoul', 127.04573, 37.52535, '스시 마츠모토', '1스타 미쉐린', '서울특별시 강남구 도산대로 75길 24', 1, 2024, '스시');
-INSERT INTO michelin.michelin_List
-(seq, ctprvn_eng_nm, fclty_la, fclty_lo, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(19, 'seoul', 127.0362, 37.52334, '에빗', '1스타 미쉐린', '서울특별시 강남구 도산대로 45길 10-5', 1, 2024, '이노베이티브');
-INSERT INTO michelin.michelin_List
-(seq, ctprvn_eng_nm, fclty_la, fclty_lo, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(20, 'seoul', 126.98443, 37.54533, '소울', '1스타 미쉐린', '서울특별시 용산구 신흥로 26길 35, 지하 1층', 1, 2024, '컨템퍼러리');
-INSERT INTO michelin.michelin_List
-(seq, ctprvn_eng_nm, fclty_la, fclty_lo, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(21, 'seoul', 126.99285, 37.52079, '제로 컴플렉스', '1스타 미쉐린', '서울특별시 용산구 용산구 서빙고로 59길 11-8', 1, 2024, '이노베이티브');
-INSERT INTO michelin.michelin_List
-(seq, ctprvn_eng_nm, fclty_la, fclty_lo, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(22, 'seoul', 127.04965, 37.52099, '익스퀴진', '1스타 미쉐린', '서울특별시 강남구 삼성로 140길 6', 1, 2024, '컨템퍼러리');
-INSERT INTO michelin.michelin_List
-(seq, ctprvn_eng_nm, fclty_la, fclty_lo, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(23, 'seoul', 126.97345, 37.58048, '온지음', '1스타 미쉐린', '서울특별시 종로구 효자로 49, 4층', 1, 2024, '한식');
-INSERT INTO michelin.michelin_List
-(seq, ctprvn_eng_nm, fclty_la, fclty_lo, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(24, 'seoul', 127.044515, 37.522448, '강민철 레스토랑', '1스타 미쉐린', '서울특별시 강남구 도산대로 68길 18, 지하 1층', 1, 2024, '프렌치');
-INSERT INTO michelin.michelin_List
-(seq, ctprvn_eng_nm, fclty_la, fclty_lo, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(25, 'seoul', 127.04222, 37.51896, '무오키', '1스타 미쉐린', '서울특별시 강남구 학동로 55길 12-12, 2층', 1, 2024, '컨템퍼러리');
-INSERT INTO michelin.michelin_List
-(seq, ctprvn_eng_nm, fclty_la, fclty_lo, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(26, 'seoul', 127.10253, 37.5126, '비채나', '1스타 미쉐린', '서울특별시 송파구 올림픽로 300, 롯데월드 타워 81층', 1, 2024, '한식');
-INSERT INTO michelin.michelin_List
-(seq, ctprvn_eng_nm, fclty_la, fclty_lo, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(27, 'seoul', 127.04545, 37.52291, '무니', '1스타 미쉐린', '서울특별시 강남구 도산대로 72길 16', 1, 2024, '일식');
-INSERT INTO michelin.michelin_List
-(seq, ctprvn_eng_nm, fclty_la, fclty_lo, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(28, 'seoul', 127.00914, 37.53528, '소설한남', '1스타 미쉐린', '서울특별시 용산구 한남대로 20길 21-18', 1, 2024, '한식');
-INSERT INTO michelin.michelin_List
-(seq, ctprvn_eng_nm, fclty_la, fclty_lo, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(29, 'seoul', 127.04158, 37.50304, '이타닉 가든', '1스타 미쉐린', '서울특별시 강남구 테헤란로 231, 조선팰리스 호텔 36층', 1, 2024, '이노베이티브');
-INSERT INTO michelin.michelin_List
-(seq, ctprvn_eng_nm, fclty_la, fclty_lo, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(30, 'seoul', 127.03378, 37.516, '솔밤', '1스타 미쉐린', '서울특별시 강남구 학동로 231, 2층', 1, 2024, '컨템퍼러리');
-INSERT INTO michelin.michelin_List
-(seq, ctprvn_eng_nm, fclty_la, fclty_lo, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(31, 'seoul', 127.04455, 37.52591, '라미띠에', '1스타 미쉐린', '서울특별시 강남구 도산대로 67길 30, 2층', 1, 2024, '프렌치');
-INSERT INTO michelin.michelin_List
-(seq, ctprvn_eng_nm, fclty_la, fclty_lo, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(32, 'seoul', 127.03478, 37.52298, '고료리 켄', '1스타 미쉐린', '서울특별시 강남구 언주로 152길 15-3, 2층', 1, 2024, '컨템퍼러리');
-INSERT INTO michelin.michelin_List
-(seq, ctprvn_eng_nm, fclty_la, fclty_lo, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(33, 'busan', 129.16659, 35.1602, '모리', '1스타 미쉐린', '부산광역시 해운대구 해운대해변로 298번길 24, 팔레드시즈 2층 2-4호', 1, 2024, '일식');
-INSERT INTO michelin.michelin_List
-(seq, ctprvn_eng_nm, fclty_la, fclty_lo, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(34, 'busan', 129.17362, 35.16177, '피오또', '1스타 미쉐린', '부산광역시 해운대구 좌동순환로 432, 4층', 1, 2024, '이탤리언');
+INSERT INTO michelin.michelin_list_kr
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
+VALUES(1, 'seoul', 37.52437, 127.04355, '권숙수', '2스타 미쉐린', '서울특별시 강남구 압구정로 80길 37, 4층', 2, 2024, '한식');
+INSERT INTO michelin.michelin_list_kr
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
+VALUES(2, 'seoul', 37.52535, 127.04426, '밍글스', '2스타 미쉐린', '서울특별시 강남구 도산대로 67길 19, 2층', 2, 2024, '한식');
+INSERT INTO michelin.michelin_list_kr
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
+VALUES(3, 'seoul', 37.555813, 127.00517, '라연', '2스타 미쉐린', '서울특별시 중구 동호로 249, 신라호텔 23층', 2, 2024, '한식');
+INSERT INTO michelin.michelin_list_kr
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
+VALUES(4, 'seoul', 37.51933, 127.01903, '스와니예', '2스타 미쉐린', '서울특별시 강남구 강남대로 652 신사스퀘어 2층 201호', 2, 2024, '이노베이티브');
+INSERT INTO michelin.michelin_list_kr
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
+VALUES(5, 'seoul', 37.52559, 127.04193, '코지마', '2스타 미쉐린', '서울특별시 강남구 압구정로 60길 21, 분더샵 6층', 2, 2024, '스시');
+INSERT INTO michelin.michelin_list_kr
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
+VALUES(6, 'seoul', 37.52206, 127.04502, '미토우', '2스타 미쉐린', '서울특별시 강남구 도산대로 70길 24', 2, 2024, '일식');
+INSERT INTO michelin.michelin_list_kr
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
+VALUES(7, 'seoul', 37.51346, 127.02602, '알라 프리마', '2스타 미쉐린', '서울특별시 강남구 학동로 17길 13', 2, 2024, '이노베이티브');
+INSERT INTO michelin.michelin_list_kr
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
+VALUES(8, 'seoul', 37.5036, 127.0418, '레스토랑 알렌', '2스타 미쉐린', '서울특별시 강남구 테헤란로 231, 센터필드 East 2층 E205호', 2, 2024, '컨템퍼러리');
+INSERT INTO michelin.michelin_list_kr
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
+VALUES(9, 'seoul', 37.525584, 127.041069, '정식당', '2스타 미쉐린', '서울특별시 강남구 선릉로 158길 11', 2, 2024, '컨템퍼러리');
+INSERT INTO michelin.michelin_list_kr
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
+VALUES(10, 'busan', 35.13162, 129.11976, '팔레트', '1스타 미쉐린', '부산광역시 남구 분포로 66-30 3층', 1, 2024, '컨템퍼러리');
+INSERT INTO michelin.michelin_list_kr
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
+VALUES(11, 'seoul', 37.55983, 126.97949, '라망 시크레', '1스타 미쉐린', '서울특별시 중구 퇴계로 67, 레스케이프 호텔 26층', 1, 2024, '컨템퍼러리');
+INSERT INTO michelin.michelin_list_kr
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
+VALUES(12, 'seoul', 37.52416, 127.03906, '윤서울', '1스타 미쉐린', '서울특별시 강남구 선릉로 805', 1, 2024, '한식');
+INSERT INTO michelin.michelin_list_kr
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
+VALUES(13, 'seoul', 37.5604, 127.00247, '호빈', '1스타 미쉐린', '서울특별시 중구 동호로 287, 앰배서더 서울 풀만 2층', 1, 2024, '중식');
+INSERT INTO michelin.michelin_list_kr
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
+VALUES(14, 'seoul', 37.52237, 127.05429, '세븐스도어', '1스타 미쉐린', '서울특별시 강남구 학동로 97길 41, 4층', 1, 2024, '컨템퍼러리');
+INSERT INTO michelin.michelin_list_kr
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
+VALUES(15, 'seoul', 37.527581, 127.034877, '하네', '1스타 미쉐린', '서울특별시 강남구 언주로 172길 14', 1, 2024, '스시');
+INSERT INTO michelin.michelin_list_kr
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
+VALUES(16, 'seoul', 37.52083, 127.05519, '코자차', '1스타 미쉐린', '서울특별시 강남구 학동로 97길 17', 1, 2024, '아시안');
+INSERT INTO michelin.michelin_list_kr
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
+VALUES(17, 'seoul', 37.51866, 127.03814, '빈호', '1스타 미쉐린', '서울특별시 강남구 학동로 43길 38, 논현웰스톤 162호', 1, 2024, '컨템퍼러리');
+INSERT INTO michelin.michelin_list_kr
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
+VALUES(18, 'seoul', 37.52535, 127.04573, '스시 마츠모토', '1스타 미쉐린', '서울특별시 강남구 도산대로 75길 24', 1, 2024, '스시');
+INSERT INTO michelin.michelin_list_kr
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
+VALUES(19, 'seoul', 37.52334, 127.0362, '에빗', '1스타 미쉐린', '서울특별시 강남구 도산대로 45길 10-5', 1, 2024, '이노베이티브');
+INSERT INTO michelin.michelin_list_kr
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
+VALUES(20, 'seoul', 37.54533, 126.98443, '소울', '1스타 미쉐린', '서울특별시 용산구 신흥로 26길 35, 지하 1층', 1, 2024, '컨템퍼러리');
+INSERT INTO michelin.michelin_list_kr
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
+VALUES(21, 'seoul', 37.52079, 126.99285, '제로 컴플렉스', '1스타 미쉐린', '서울특별시 용산구 용산구 서빙고로 59길 11-8', 1, 2024, '이노베이티브');
+INSERT INTO michelin.michelin_list_kr
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
+VALUES(22, 'seoul', 37.52099, 127.04965, '익스퀴진', '1스타 미쉐린', '서울특별시 강남구 삼성로 140길 6', 1, 2024, '컨템퍼러리');
+INSERT INTO michelin.michelin_list_kr
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
+VALUES(23, 'seoul', 37.58048, 126.97345, '온지음', '1스타 미쉐린', '서울특별시 종로구 효자로 49, 4층', 1, 2024, '한식');
+INSERT INTO michelin.michelin_list_kr
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
+VALUES(24, 'seoul', 37.522448, 127.044515, '강민철 레스토랑', '1스타 미쉐린', '서울특별시 강남구 도산대로 68길 18, 지하 1층', 1, 2024, '프렌치');
+INSERT INTO michelin.michelin_list_kr
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
+VALUES(25, 'seoul', 37.51896, 127.04222, '무오키', '1스타 미쉐린', '서울특별시 강남구 학동로 55길 12-12, 2층', 1, 2024, '컨템퍼러리');
+INSERT INTO michelin.michelin_list_kr
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
+VALUES(26, 'seoul', 37.5126, 127.10253, '비채나', '1스타 미쉐린', '서울특별시 송파구 올림픽로 300, 롯데월드 타워 81층', 1, 2024, '한식');
+INSERT INTO michelin.michelin_list_kr
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
+VALUES(27, 'seoul', 37.52291, 127.04545, '무니', '1스타 미쉐린', '서울특별시 강남구 도산대로 72길 16', 1, 2024, '일식');
+INSERT INTO michelin.michelin_list_kr
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
+VALUES(28, 'seoul', 37.53528, 127.00914, '소설한남', '1스타 미쉐린', '서울특별시 용산구 한남대로 20길 21-18', 1, 2024, '한식');
+INSERT INTO michelin.michelin_list_kr
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
+VALUES(29, 'seoul', 37.50304, 127.04158, '이타닉 가든', '1스타 미쉐린', '서울특별시 강남구 테헤란로 231, 조선팰리스 호텔 36층', 1, 2024, '이노베이티브');
+INSERT INTO michelin.michelin_list_kr
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
+VALUES(30, 'seoul', 37.516, 127.03378, '솔밤', '1스타 미쉐린', '서울특별시 강남구 학동로 231, 2층', 1, 2024, '컨템퍼러리');
+INSERT INTO michelin.michelin_list_kr
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
+VALUES(31, 'seoul', 37.52591, 127.04455, '라미띠에', '1스타 미쉐린', '서울특별시 강남구 도산대로 67길 30, 2층', 1, 2024, '프렌치');
+INSERT INTO michelin.michelin_list_kr
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
+VALUES(32, 'seoul', 37.52298, 127.03478, '고료리 켄', '1스타 미쉐린', '서울특별시 강남구 언주로 152길 15-3, 2층', 1, 2024, '컨템퍼러리');
+INSERT INTO michelin.michelin_list_kr
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
+VALUES(33, 'busan', 35.1602, 129.16659, '모리', '1스타 미쉐린', '부산광역시 해운대구 해운대해변로 298번길 24, 팔레드시즈 2층 2-4호', 1, 2024, '일식');
+INSERT INTO michelin.michelin_list_kr
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
+VALUES(34, 'busan', 35.16177, 129.17362, '피오또', '1스타 미쉐린', '부산광역시 해운대구 좌동순환로 432, 4층', 1, 2024, '이탤리언');
