@@ -11,7 +11,7 @@ Pakaging : jar
 ```
 
 ```
-AWS(WAS) 사양
+AWS 사양
 
 AWS 리전 : ap-northeast-2 (서울)
 인스턴스 유형 : t2.micro
