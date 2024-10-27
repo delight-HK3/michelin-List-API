@@ -1,11 +1,13 @@
 package com.api.michelinAPI.dto;
 
 import lombok.AllArgsConstructor;
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
-@Data
+@Getter
+@Setter
 @AllArgsConstructor
 public class errorResultDTO {
-    private String code;
-	private String message;
+    private final String code;
+	private final String message;
 }

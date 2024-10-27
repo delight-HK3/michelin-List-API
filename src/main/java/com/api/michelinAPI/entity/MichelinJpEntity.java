@@ -8,16 +8,17 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import lombok.AccessLevel;
 import lombok.Getter;
-import lombok.Setter;
+import lombok.NoArgsConstructor;
 
 /**
  * 일본 미쉐린 가이드 Entity
  */
 
 @Getter
-@Setter
 @Entity
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Table(name = "michelin_List_jp")
 public class MichelinJpEntity {
 
@@ -62,4 +63,8 @@ public class MichelinJpEntity {
     @Column(name = "FOOD_CATG")
     @Comment(value = "식사카테고리")
     private String foodCatg;            // 식사카테고리
+
+    @Column(name = "SUSTAINABILITY")
+    @Comment(value = "지속가능성")
+    private int sustainability;            // 지속가능성
 }
