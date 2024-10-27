@@ -43,8 +43,8 @@ API요청방식은 [공공데이터](https://www.data.go.kr/)의 openAPI 호출�
 #### URL 분기
 | URL 분기 | 설명 |
 | ------ | ------ |
-| /kr/michelin_list | 대한민국 미쉐린 데이터 출력 |
-| /jp/michelin_list | 일본 미쉐린 데이터 출력 |
+| /kr/michelin-list | 대한민국 미쉐린 데이터 출력 |
+| /jp/michelin-list | 일본 미쉐린 데이터 출력 |
 
 #### 출력결과
 | 항목명 | 설명 |
