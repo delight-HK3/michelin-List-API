@@ -1,216 +1,216 @@
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(35, 'seoul', 37.57939, 126.98446, '안암', '빕 구르망', '서울특별시 종로구 북촌로 5길 10', 0, 2024, '돼지국밥');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(35, 'seoul', 37.57939, 126.98446, '안암', '빕 구르망', '서울특별시 종로구 북촌로 5길 10', 0, 2024, '돼지국밥', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(36, 'busan', 35.15264, 129.06769, '코르 파스타바', '빕 구르망', '부산광역시 진구 동성로 25번길 13', 0, 2024, '이탤리언');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(36, 'busan', 35.15264, 129.06769, '코르 파스타바', '빕 구르망', '부산광역시 진구 동성로 25번길 13', 0, 2024, '이탤리언', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(37, 'busan', 35.14839, 129.11386, '동경밥상', '빕 구르망', '부산광역시 수영구 남천바다로 34-6', 0, 2024, '장어');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(37, 'busan', 35.14839, 129.11386, '동경밥상', '빕 구르망', '부산광역시 수영구 남천바다로 34-6', 0, 2024, '장어', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(38, 'busan', 35.14492, 129.11076, '안목', '빕 구르망', '부산광역시 수영구 광남로 22번길 3', 0, 2024, '돼지국밥');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(38, 'busan', 35.14492, 129.11076, '안목', '빕 구르망', '부산광역시 수영구 광남로 22번길 3', 0, 2024, '돼지국밥', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(39, 'busan', 35.09293, 129.04258, '아르프', '빕 구르망', '부산광역시 영도구 태종로 99번길 35', 0, 2024, '비건');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(39, 'busan', 35.09293, 129.04258, '아르프', '빕 구르망', '부산광역시 영도구 태종로 99번길 35', 0, 2024, '비건', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(40, 'seoul', 37.545342, 126.984447, '에그 앤 플라워', '빕 구르망', '서울특별시 용산구 신흥로 26길 35, 3층', 0, 2024, '이탤리언');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(40, 'seoul', 37.545342, 126.984447, '에그 앤 플라워', '빕 구르망', '서울특별시 용산구 신흥로 26길 35, 3층', 0, 2024, '이탤리언', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(41, 'seoul', 37.516631, 127.018893, '꿉당', '빕 구르망', '서울특별시 서초구 강남대로 615', 0, 2024, '바비큐');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(41, 'seoul', 37.516631, 127.018893, '꿉당', '빕 구르망', '서울특별시 서초구 강남대로 615', 0, 2024, '바비큐', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(42, 'busan', 35.16174, 129.15977, '해목', '빕 구르망', '부산광역시 해운대구 구남로 24번길 8', 0, 2024, '일식');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(42, 'busan', 35.16174, 129.15977, '해목', '빕 구르망', '부산광역시 해운대구 구남로 24번길 8', 0, 2024, '일식', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(43, 'busan', 35.16664, 129.15748, '나가하마 만게츠', '빕 구르망', '부산광역시 해운대구 우동 1로 57', 0, 2024, '라멘');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(43, 'busan', 35.16664, 129.15748, '나가하마 만게츠', '빕 구르망', '부산광역시 해운대구 우동 1로 57', 0, 2024, '라멘', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(44, 'seoul', 37.54964, 127.04456, '팩피', '빕 구르망', '서울특별시 성동구 왕십리로 136', 0, 2024, '이탤리언');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(44, 'seoul', 37.54964, 127.04456, '팩피', '빕 구르망', '서울특별시 성동구 왕십리로 136', 0, 2024, '이탤리언', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(45, 'seoul', 37.57535, 126.98404, '꽃밥에피다', '빕 구르망', '서울특별시 종로구 인사동 16길 3-6', 0, 2024, '한식');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(45, 'seoul', 37.57535, 126.98404, '꽃밥에피다', '빕 구르망', '서울특별시 종로구 인사동 16길 3-6', 0, 2024, '한식', 1);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(46, 'seoul', 37.56439, 126.98501, '하동관', '빕 구르망', '서울특별시 중구 명동 9길 12', 0, 2024, '곰탕');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(46, 'seoul', 37.56439, 126.98501, '하동관', '빕 구르망', '서울특별시 중구 명동 9길 12', 0, 2024, '곰탕', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(47, 'seoul', 37.52516, 127.03889, '소이연남마오', '빕 구르망', '서울특별시 강남구 도산대로 53길 30', 0, 2024, '타이');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(47, 'seoul', 37.52516, 127.03889, '소이연남마오', '빕 구르망', '서울특별시 강남구 도산대로 53길 30', 0, 2024, '타이', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(48, 'seoul', 37.56815, 126.99866, '우래옥', '빕 구르망', '서울특별시 중구 창경궁로 62-29', 0, 2024, '냉면');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(48, 'seoul', 37.56815, 126.99866, '우래옥', '빕 구르망', '서울특별시 중구 창경궁로 62-29', 0, 2024, '냉면', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(49, 'seoul', 37.54501, 126.97318, '구복만두', '빕 구르망', '서울특별시 용산구 두텁바위로 7', 0, 2024, '딤섬');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(49, 'seoul', 37.54501, 126.97318, '구복만두', '빕 구르망', '서울특별시 용산구 두텁바위로 7', 0, 2024, '딤섬', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(50, 'seoul', 37.56035, 126.99689, '필동면옥', '빕 구르망', '서울특별시 중구 서애로 26', 0, 2024, '냉면');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(50, 'seoul', 37.56035, 126.99689, '필동면옥', '빕 구르망', '서울특별시 중구 서애로 26', 0, 2024, '냉면', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(51, 'seoul', 37.55705, 127.01165, '금돼지식당', '빕 구르망', '서울특별시 중구 다산로 149', 0, 2024, '바비큐');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(51, 'seoul', 37.55705, 127.01165, '금돼지식당', '빕 구르망', '서울특별시 중구 다산로 149', 0, 2024, '바비큐', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(52, 'seoul', 37.57972, 126.97088, '용금옥', '빕 구르망', '서울특별시 종로구 자하문로 41-2', 0, 2024, '추어탕');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(52, 'seoul', 37.57972, 126.97088, '용금옥', '빕 구르망', '서울특별시 종로구 자하문로 41-2', 0, 2024, '추어탕', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(53, 'seoul', 37.51727, 127.03942, '게방식당', '빕 구르망', '서울특별시 강남구 선릉로 131길 17', 0, 2024, '게장');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(53, 'seoul', 37.51727, 127.03942, '게방식당', '빕 구르망', '서울특별시 강남구 선릉로 131길 17', 0, 2024, '게장', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(54, 'seoul', 37.57034, 126.99991, '부촌육회', '빕 구르망', '서울특별시 종로구 종로 200-12', 0, 2024, '육회');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(54, 'seoul', 37.57034, 126.99991, '부촌육회', '빕 구르망', '서울특별시 종로구 종로 200-12', 0, 2024, '육회', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(55, 'seoul', 37.55261, 126.91449, '옥동식', '빕 구르망', '서울특별시 마포구 양화로 7길 44-10', 0, 2024, '돼지국밥');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(55, 'seoul', 37.55261, 126.91449, '옥동식', '빕 구르망', '서울특별시 마포구 양화로 7길 44-10', 0, 2024, '돼지국밥', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(56, 'seoul', 37.566, 126.9784, '역전회관', '빕 구르망', '서울특별시 마포구 토정로 37길 47', 0, 2024, '불고기');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(56, 'seoul', 126.947047, 37.542911, '역전회관', '빕 구르망', '서울특별시 마포구 토정로 37길 47', 0, 2024, '불고기', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(57, 'seoul', 37.516114, 127.036202, '진미 평양냉면', '빕 구르망', '서울특별시 강남구 학동로 305-3', 0, 2024, '냉면');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(57, 'seoul', 37.516114, 127.036202, '진미 평양냉면', '빕 구르망', '서울특별시 강남구 학동로 305-3', 0, 2024, '냉면', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(58, 'seoul', 37.49247, 126.98826, '양양 메밀 막국수', '빕 구르망', '서울특별시 서초구 동광로 15길 10', 0, 2024, '메밀국수');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(58, 'seoul', 37.49247, 126.98826, '양양 메밀 막국수', '빕 구르망', '서울특별시 서초구 동광로 15길 10', 0, 2024, '메밀국수', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(59, 'seoul', 37.56103, 126.92267, '사루카메', '빕 구르망', '서울특별시 마포구 연남로 15', 0, 2024, '라멘');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(59, 'seoul', 37.56103, 126.92267, '사루카메', '빕 구르망', '서울특별시 마포구 연남로 15', 0, 2024, '라멘', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(60, 'seoul', 37.55316, 126.91412, '담택', '빕 구르망', '서울특별시 마포구 월드컵로 8길 34', 0, 2024, '라멘');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(60, 'seoul', 37.55316, 126.91412, '담택', '빕 구르망', '서울특별시 마포구 월드컵로 8길 34', 0, 2024, '라멘', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(61, 'busan', 35.15644, 129.1185, '러브얼스', '빕 구르망', '부산광역시 수영구 광안로 49번길 32-1', 0, 2024, '비건');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(61, 'busan', 35.15644, 129.1185, '러브얼스', '빕 구르망', '부산광역시 수영구 광안로 49번길 32-1', 0, 2024, '비건', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(62, 'seoul', 37.53808, 127.05065, '맷돌', '빕 구르망', '서울특별시 성동구 성덕정길 63', 0, 2024, '멕시칸');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(62, 'seoul', 37.53808, 127.05065, '맷돌', '빕 구르망', '서울특별시 성동구 성덕정길 63', 0, 2024, '멕시칸', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(63, 'busan', 35.16379, 129.11807, '피리피리', '빕 구르망', '부산광역시 수영구 무학로 33번길 54', 0, 2024, '타이');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(63, 'busan', 35.16379, 129.11807, '피리피리', '빕 구르망', '부산광역시 수영구 무학로 33번길 54', 0, 2024, '타이', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(64, 'seoul', 37.566, 126.9784, '유림면', '빕 구르망', '서울특별시 중구 서소문로 139-1', 0, 2024, '메밀국수');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(64, 'seoul', 126.976055, 37.56438, '유림면', '빕 구르망', '서울특별시 중구 서소문로 139-1', 0, 2024, '메밀국수', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(65, 'seoul', 37.5708, 126.97985, '미진', '빕 구르망', '서울특별시 종로구 종로 19, 르메이에르 종로타운 116-2호', 0, 2024, '메밀국수');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(65, 'seoul', 37.5708, 126.97985, '미진', '빕 구르망', '서울특별시 종로구 종로 19, 르메이에르 종로타운 116-2호', 0, 2024, '메밀국수', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(66, 'seoul', 37.511577, 127.056798, '팀호완', '빕 구르망', '서울특별시 강남구 봉은사로 86길 30', 0, 2024, '딤섬');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(66, 'seoul', 37.511577, 127.056798, '팀호완', '빕 구르망', '서울특별시 강남구 봉은사로 86길 30', 0, 2024, '딤섬', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(67, 'seoul', 37.561951, 126.988568, '멘텐', '빕 구르망', '서울특별시 중구 삼일대로 305', 0, 2024, '라멘');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(67, 'seoul', 37.561951, 126.988568, '멘텐', '빕 구르망', '서울특별시 중구 삼일대로 305', 0, 2024, '라멘', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(68, 'seoul', 37.55777, 126.91324, '진진', '빕 구르망', '서울특별시 마포구 월드컵북로 1길 60', 0, 2024, '중식');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(68, 'seoul', 37.55777, 126.91324, '진진', '빕 구르망', '서울특별시 마포구 월드컵북로 1길 60', 0, 2024, '중식', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(69, 'seoul', 37.54944, 126.91037, '합정옥', '빕 구르망', '서울특별시 마포구 양화로 1길 21, 2층', 0, 2024, '곰탕');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(69, 'seoul', 37.54944, 126.91037, '합정옥', '빕 구르망', '서울특별시 마포구 양화로 1길 21, 2층', 0, 2024, '곰탕', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(70, 'seoul', 37.566, 126.9784, '베이스 이즈 나이스', '빕 구르망', '서울특별시 마포구 도화 2길 20', 0, 2024, '베지테리안');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(70, 'seoul', 126.949103, 37.53962, '베이스 이즈 나이스', '빕 구르망', '서울특별시 마포구 도화 2길 20', 0, 2024, '베지테리안', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(71, 'seoul', 37.54744, 126.91729, '오레노 라멘', '빕 구르망', '서울특별시 마포구 독막로 6길 14', 0, 2024, '라멘');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(71, 'seoul', 37.54744, 126.91729, '오레노 라멘', '빕 구르망', '서울특별시 마포구 독막로 6길 14', 0, 2024, '라멘', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(72, 'seoul', 37.48336, 127.01242, '봉산옥', '빕 구르망', '서울특별시 서초구 반포대로 8길 5-6', 0, 2024, '만두');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(72, 'seoul', 37.48336, 127.01242, '봉산옥', '빕 구르망', '서울특별시 서초구 반포대로 8길 5-6', 0, 2024, '만두', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(73, 'seoul', 37.53983, 126.94332, '마포옥', '빕 구르망', '서울특별시 마포구 토정로 312', 0, 2024, '설렁탕');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(73, 'seoul', 37.53983, 126.94332, '마포옥', '빕 구르망', '서울특별시 마포구 토정로 312', 0, 2024, '설렁탕', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(74, 'seoul', 37.5509, 126.9567, '황금콩밭', '빕 구르망', '서울특별시 마포구 마포대로 16길 9', 0, 2024, '두부');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(74, 'seoul', 37.5509, 126.9567, '황금콩밭', '빕 구르망', '서울특별시 마포구 마포대로 16길 9', 0, 2024, '두부', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(75, 'seoul', 126.99994, 37.53592, '교양식사', '빕 구르망', '서울특별시 용산구 이태원로 238', 0, 2024, '바비큐');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(75, 'seoul', 126.99994, 37.53592, '교양식사', '빕 구르망', '서울특별시 용산구 이태원로 238', 0, 2024, '바비큐', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(76, 'seoul', 126.981609, 37.567269, '남포면옥', '빕 구르망', '서울특별시 중구 을지로 3길 24', 0, 2024, '냉면');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(76, 'seoul', 126.981609, 37.567269, '남포면옥', '빕 구르망', '서울특별시 중구 을지로 3길 24', 0, 2024, '냉면', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(77, 'seoul', 126.97598, 37.56324, '만족오향족발', '빕 구르망', '서울특별시 중구 서소문로 134-7', 0, 2024, '족발');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(77, 'seoul', 126.97598, 37.56324, '만족오향족발', '빕 구르망', '서울특별시 중구 서소문로 134-7', 0, 2024, '족발', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(78, 'seoul', 126.96091, 37.57269, '대성집', '빕 구르망', '서울특별시 종로구 사직로 5', 0, 2024, '도가니탕');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(78, 'seoul', 126.96091, 37.57269, '대성집', '빕 구르망', '서울특별시 종로구 사직로 5', 0, 2024, '도가니탕', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(79, 'seoul', 126.98539, 37.57423, '개성만두 궁', '빕 구르망', '서울특별시 종로구 인사동 10길 11-3', 0, 2024, '만두');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(79, 'seoul', 126.98539, 37.57423, '개성만두 궁', '빕 구르망', '서울특별시 종로구 인사동 10길 11-3', 0, 2024, '만두', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(80, 'seoul', 126.98611, 37.49234, '스바루', '빕 구르망', '서울특별시 서초구 방배중앙로 21길 7', 0, 2024, '소바');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(80, 'seoul', 126.98611, 37.49234, '스바루', '빕 구르망', '서울특별시 서초구 방배중앙로 21길 7', 0, 2024, '소바', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(81, 'seoul', 126.9784, 37.566, '명동 교자', '빕 구르망', '서울특별시 중구 명동 10길 29', 0, 2024, '칼국수');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(81, 'seoul', 126.98561, 37.562555, '명동 교자', '빕 구르망', '서울특별시 중구 명동 10길 29', 0, 2024, '칼국수', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(82, 'seoul', 127.03898, 37.52785, '만두집', '빕 구르망', '서울특별시 강남구 압구정로 338', 0, 2024, '만두');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(82, 'seoul', 127.03898, 37.52785, '만두집', '빕 구르망', '서울특별시 강남구 압구정로 338', 0, 2024, '만두', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(83, 'seoul', 126.98065, 37.58003, '황생가 칼국수', '빕 구르망', '서울특별시 종로구 북촌로 5길 78', 0, 2024, '칼국수');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(83, 'seoul', 126.98065, 37.58003, '황생가 칼국수', '빕 구르망', '서울특별시 종로구 북촌로 5길 78', 0, 2024, '칼국수', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(84, 'seoul', 126.89189, 37.58449, '삼청동 수제비', '빕 구르망', '서울특별시 종로구 삼청로 101-1', 0, 2024, '수제비');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(84, 'seoul', 126.89189, 37.58449, '삼청동 수제비', '빕 구르망', '서울특별시 종로구 삼청로 101-1', 0, 2024, '수제비', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(85, 'busan', 129.06335, 35.15488, '바오하우스', '빕 구르망', '부산광역시 진구 서전로 38번길 62-9, 2층', 0, 2024, '타이완');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(85, 'busan', 129.06335, 35.15488, '바오하우스', '빕 구르망', '부산광역시 진구 서전로 38번길 62-9, 2층', 0, 2024, '타이완', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(86, 'busan', 129.11127, 35.11124, '합천국밥집', '빕 구르망', '부산광역시 남구 용호로 235', 0, 2024, '돼지국밥');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(86, 'busan', 129.11127, 35.11124, '합천국밥집', '빕 구르망', '부산광역시 남구 용호로 235', 0, 2024, '돼지국밥', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(87, 'seoul', 126.9714, 37.57563, '할매집', '빕 구르망', '서울특별시 종로구 사직로 12길 1-5', 0, 2024, '냉면');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(87, 'seoul', 126.9714, 37.57563, '할매집', '빕 구르망', '서울특별시 종로구 사직로 12길 1-5', 0, 2024, '냉면', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(88, 'seoul', 126.92167, 37.5307, '정인면옥', '빕 구르망', '서울특별시 영등포구 국회대로 76길 10', 0, 2024, '국수');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(88, 'seoul', 126.92167, 37.5307, '정인면옥', '빕 구르망', '서울특별시 영등포구 국회대로 76길 10', 0, 2024, '국수', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(89, 'busan', 129.01472, 35.24088, '슌사이 쿠보', '빕 구르망', '부산광역시 북구 양달로 4번길 17', 0, 2024, '장어');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(89, 'busan', 129.01472, 35.24088, '슌사이 쿠보', '빕 구르망', '부산광역시 북구 양달로 4번길 17', 0, 2024, '장어', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(90, 'busan', 129.16298, 35.16237, '부다면옥', '빕 구르망', '부산광역시 해운대구 중동 1로 36, 2층', 0, 2024, '냉면');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(90, 'busan', 129.16298, 35.16237, '부다면옥', '빕 구르망', '부산광역시 해운대구 중동 1로 36, 2층', 0, 2024, '냉면', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(91, 'seoul', 126.93576, 37.55665, '정육면체', '빕 구르망', '서울특별시 서대문구 연세로 5다길 22-8', 0, 2024, '국수');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(91, 'seoul', 126.93576, 37.55665, '정육면체', '빕 구르망', '서울특별시 서대문구 연세로 5다길 22-8', 0, 2024, '국수', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(92, 'seoul', 127.04762, 37.53952, '계월곰탕', '빕 구르망', '서울특별시 성동구 성덕정 3길 8', 0, 2024, '곰탕');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(92, 'seoul', 127.04762, 37.53952, '계월곰탕', '빕 구르망', '서울특별시 성동구 성덕정 3길 8', 0, 2024, '곰탕', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(93, 'seoul', 126.98612, 37.56854, '우육면관', '빕 구르망', '서울특별시 종로구 청계천로 75-2', 0, 2024, '국수');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(93, 'seoul', 126.98612, 37.56854, '우육면관', '빕 구르망', '서울특별시 종로구 청계천로 75-2', 0, 2024, '국수', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(94, 'seoul', 127.037424, 37.516773, '원 디그리 노스', '빕 구르망', '서울특별시 강남구 학동로 43길 8', 0, 2024, '아시');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(94, 'seoul', 127.037424, 37.516773, '원 디그리 노스', '빕 구르망', '서울특별시 강남구 학동로 43길 8', 0, 2024, '아시', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(95, 'seoul', 37.54551, 127.06866, '정면', '빕 구르망', '서울특별시 광진구 능동로 13길 88', 0, 2024, '국수');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(95, 'seoul', 37.54551, 127.06866, '정면', '빕 구르망', '서울특별시 광진구 능동로 13길 88', 0, 2024, '국수', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(96, 'seoul', 37.59309, 126.96603, '자하 손만두', '빕 구르망', '서울특별시 종로구 백석동길 12', 0, 2024, '만두');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(96, 'seoul', 37.59309, 126.96603, '자하 손만두', '빕 구르망', '서울특별시 종로구 백석동길 12', 0, 2024, '만두', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(97, 'seoul', 37.5689, 126.97541, '광화문 국밥', '빕 구르망', '서울특별시 중구 세종대로 21길 53', 0, 2024, '돼지국밥');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(97, 'seoul', 37.5689, 126.97541, '광화문 국밥', '빕 구르망', '서울특별시 중구 세종대로 21길 53', 0, 2024, '돼지국밥', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(98, 'seoul', 127.02988, 37.48458, '임병주 산동 칼국수', '빕 구르망', '서울특별시 서초구 강남대로 37길 65', 0, 2024, '칼국수');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(98, 'seoul', 127.02988, 37.48458, '임병주 산동 칼국수', '빕 구르망', '서울특별시 서초구 강남대로 37길 65', 0, 2024, '칼국수', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(99, 'seoul', 126.9784, 37.566, '현우동', '빕 구르망', '서울특별시 강남구 논현로 149길 53', 0, 2024, '우동');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(99, 'seoul', 127.02428, 37.516986, '현우동', '빕 구르망', '서울특별시 강남구 논현로 149길 53', 0, 2024, '우동', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(100, 'seoul', 126.91317, 37.54681, '교다이야', '빕 구르망', '서울특별시 마포구 성지길 39', 0, 2024, '우동');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(100, 'seoul', 126.91317, 37.54681, '교다이야', '빕 구르망', '서울특별시 마포구 성지길 39', 0, 2024, '우동', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(101, 'seoul', 126.92401, 37.56514, '툭툭 누들 타이', '빕 구르망', '서울특별시 마포구 성미산로 161-8', 0, 2024, '타이');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(101, 'seoul', 126.92401, 37.56514, '툭툭 누들 타이', '빕 구르망', '서울특별시 마포구 성미산로 161-8', 0, 2024, '타이', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(102, 'busan', 129.10832, 35.14042, '뉴러우멘관즈', '빕 구르망', '부산광역시 수영구 수영로 388번길 25-4', 0, 2024, '타이완');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(102, 'busan', 129.10832, 35.14042, '뉴러우멘관즈', '빕 구르망', '부산광역시 수영구 수영로 388번길 25-4', 0, 2024, '타이완', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(103, 'seoul', 126.91706, 37.52689, '화해당', '빕 구르망', '서울특별시 영등포구 국회대로 62길 15', 0, 2024, '게장');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(103, 'seoul', 126.91706, 37.52689, '화해당', '빕 구르망', '서울특별시 영등포구 국회대로 62길 15', 0, 2024, '게장', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(104, 'busan', 129.02054, 35.15186, '담미옥', '빕 구르망', '부산광역시 진구 복지로 15, 개금포르투나 상가 103호', 0, 2024, '냉면');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(104, 'busan', 129.02054, 35.15186, '담미옥', '빕 구르망', '부산광역시 진구 복지로 15, 개금포르투나 상가 103호', 0, 2024, '냉면', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(105, 'busan', 129.06284, 35.15866, '야키토리 온정', '빕 구르망', '부산광역시 진구 동천로 108번길 9-7', 0, 2024, '야키토리');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(105, 'busan', 129.06284, 35.15866, '야키토리 온정', '빕 구르망', '부산광역시 진구 동천로 108번길 9-7', 0, 2024, '야키토리', 0);
 INSERT INTO michelin.michelin_list_kr
-(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg)
-VALUES(106, 'seoul', 126.9711, 37.57938, '호라파', '빕 구르망', '서울특별시 종로구 자하문로 37-1, 2층', 0, 2024, '타이');
+(seq, ctprvn_eng_nm, fclty_lo, fclty_la, fclty_nm, michelin_nm, rdnmadr_nm, star_cnt, evaluation_year, food_catg, sustainability)
+VALUES(106, 'seoul', 126.9711, 37.57938, '호라파', '빕 구르망', '서울특별시 종로구 자하문로 37-1, 2층', 0, 2024, '타이', 0);
