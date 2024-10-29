@@ -14,6 +14,7 @@ CREATE TABLE `michelin_list_kr` (
   `star_cnt` int(11) DEFAULT NULL COMMENT '별 개수',
   `evaluation_year` int(11) DEFAULT NULL COMMENT '년도',
   `food_catg` varchar(100) DEFAULT NULL COMMENT '음식카테고리',
+  `sustainability` int(11) NOT NULL COMMENT '지속가능성',
   PRIMARY KEY (`seq`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
@@ -30,5 +31,6 @@ CREATE TABLE `michelin_list_jp` (
   `star_cnt` int(11) DEFAULT NULL COMMENT '별 개수',
   `evaluation_year` int(11) DEFAULT NULL COMMENT '년도',
   `food_catg` varchar(100) DEFAULT NULL COMMENT '음식카테고리',
+  `sustainability` int(11) NOT NULL COMMENT '지속가능성',
   PRIMARY KEY (`seq`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
