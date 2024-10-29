@@ -8,8 +8,6 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.servlet.resource.NoResourceFoundException;
 
-import com.api.michelinAPI.dto.errorResultDTO;
-
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.extern.slf4j.Slf4j;
 
@@ -31,9 +29,9 @@ public class exceptionHandler {
      * @return
      */
     @ExceptionHandler(MethodArgumentNotValidException.class)
-    public ResponseEntity<errorResultDTO> validError(MethodArgumentNotValidException e, HttpServletRequest request){
+    public ResponseEntity<errorResponse> validError(MethodArgumentNotValidException e, HttpServletRequest request){
         log.warn("PARAMETER TYPE ERROR!!! url:{}, trace:{}",request.getRequestURI(), e.getStackTrace());
-        errorResultDTO errorResult = new errorResultDTO("12", "PARAMETER TYPE ERROR");
+        errorResponse errorResult = new errorResponse("12", "PARAMETER TYPE ERROR");
 
         return new ResponseEntity<>(errorResult, HttpStatus.BAD_REQUEST);
     }
@@ -46,9 +44,9 @@ public class exceptionHandler {
      * @return
      */
     @ExceptionHandler(NoResourceFoundException.class)
-    public ResponseEntity<errorResultDTO> NoResourceFoundError(NoResourceFoundException e, HttpServletRequest request){
+    public ResponseEntity<errorResponse> NoResourceFoundError(NoResourceFoundException e, HttpServletRequest request){
         log.warn("NO RESOURCE ERROR!!! url:{}, trace:{}",request.getRequestURI(), e.getStackTrace());
-        errorResultDTO errorResult = new errorResultDTO("404", "NO RESOURCE ERROR");
+        errorResponse errorResult = new errorResponse("404", "NO RESOURCE ERROR");
 
         return new ResponseEntity<>(errorResult, HttpStatus.BAD_REQUEST);
     }
@@ -62,9 +60,9 @@ public class exceptionHandler {
      */
 
     @ExceptionHandler(NullPointerException.class)
-    public ResponseEntity<errorResultDTO> NullPointerException(NullPointerException e, HttpServletRequest request){
+    public ResponseEntity<errorResponse> NullPointerException(NullPointerException e, HttpServletRequest request){
         log.warn("NO_MANDATORY_REQUEST_PARAMETERS_ERROR!!! url:{}, trace:{}",request.getRequestURI(), e.getStackTrace());
-        errorResultDTO errorResult = new errorResultDTO("11", "NO_MANDATORY_REQUEST_PARAMETERS_ERROR");
+        errorResponse errorResult = new errorResponse("11", "NO_MANDATORY_REQUEST_PARAMETERS_ERROR");
         
         return new ResponseEntity<>(errorResult, HttpStatus.BAD_REQUEST);
     }
@@ -78,9 +76,9 @@ public class exceptionHandler {
      * @return
      */
     @ExceptionHandler({DataAccessException.class})
-    public ResponseEntity<errorResultDTO> handleSQLException(DataAccessException e, HttpServletRequest request){
+    public ResponseEntity<errorResponse> handleSQLException(DataAccessException e, HttpServletRequest request){
         log.warn("DB ERROR!!! url:{}, trace:{}",request.getRequestURI(), e.getStackTrace());
-        errorResultDTO errorResult = new errorResultDTO("02", "DB ERROR");
+        errorResponse errorResult = new errorResponse("02", "DB ERROR");
         
         return new ResponseEntity<>(errorResult, HttpStatus.INTERNAL_SERVER_ERROR);
     }
@@ -93,10 +91,10 @@ public class exceptionHandler {
      * @return
      */
     @ExceptionHandler(NoDataException.class)
-    public ResponseEntity<errorResultDTO> handleNoDataException(NoDataException e, HttpServletRequest request) {
+    public ResponseEntity<errorResponse> handleNoDataException(NoDataException e, HttpServletRequest request) {
         log.warn("NODATA ERROR!!! url:{}, trace:{}",request.getRequestURI(), e.getStackTrace());
-        errorResultDTO errorResult = new errorResultDTO("03", "NODATA ERROR");
-
+        errorResponse errorResult = new errorResponse("03", "NODATA ERROR");
+        
         return new ResponseEntity<>(errorResult, HttpStatus.NOT_FOUND);
     }
 
