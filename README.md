@@ -63,7 +63,7 @@ API요청방식은 [공공데이터](https://www.data.go.kr/)의 openAPI 호출�
 
 #### 사용예시
 ```
-https://4m2jy6af81.execute-api.ap-northeast-2.amazonaws.com/kr/michelin-list?row=100&starCnt=1&year=2024
+https://url.mlistapi.link/kr/michelin-list?row=100&starCnt=1&year=2024
 ```
 해석) 대한민국에서 2024년도에 선정되었고 미쉐린별을 1개만 받은 레스토랑을 100건 조회
 
@@ -78,6 +78,21 @@ https://4m2jy6af81.execute-api.ap-northeast-2.amazonaws.com/kr/michelin-list?row
 <br>
 
 ### 패치노트
+---
+#### v.1.3 (2024.10.29)
+1. 일본 미쉐린 테이블에 2스타 정보를 추가했습니다.
+2. 기존에 API Gateway에서 지급한 기본 도메인에서 사설도메인으로 변경했습니다.
+3. 하단 테이블에 있는 레스토랑의 좌표정보가 변경되었습니다.
+
+| 레스토랑 이름 | 국가 | 등급 |
+| --- | --- | --- |
+| 스시 마츠모토 | 대한민국 | 미쉐린 1스타 |
+| 명동 교자 | 대한민국 | 빕 구르망 |
+| 현우동 | 대한민국 | 빕 구르망 |
+| 역전회관 | 대한민국 | 빕 구르망 |
+| 유림면 | 대한민국 | 빕 구르망 |
+| 베이스 이즈 나이스 | 대한민국 | 빕 구르망 |
+
 ---
 #### v.1.2 (2024.10.27)
 1. 데이터베이스 서버를 추가로 구축하여 새로 구축한 서버를 바라보도록 수정
