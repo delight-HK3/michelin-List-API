@@ -30,7 +30,6 @@ public class MichelinKrRepositoryImpl implements MichelinKrRepository{
                             .where(
                                 equalStarCnt(dto.getStarCnt())
                                 , equalFcltyNm(dto.getFcltyNm())
-                                , equalYear(dto.getYear())
                                 , equalCtprvnEngNm(dto.getCtprvnEngNm())
                             )
                             .limit(dto.getRow())
@@ -45,11 +44,6 @@ public class MichelinKrRepositoryImpl implements MichelinKrRepository{
     // 레스토랑이름 체크 메서드
     private BooleanExpression equalFcltyNm(String fcltyNm){
         return fcltyNm != null ? michelinKrEntity.fcltyNm.eq(fcltyNm) : null;
-    } 
-    
-    // 년도 체크 메서드
-    private BooleanExpression equalYear(Integer year){
-        return year != null ? michelinKrEntity.year.eq(year) : null;
     } 
 
     // 시도영문명 체크 메서드
