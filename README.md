@@ -37,7 +37,6 @@ API요청방식은 [공공데이터](https://www.data.go.kr/)의 openAPI 호출�
 | row | 불러올 행 수 | Integer | O |
 | fcltyNm | 레스토랑 이름 | String | X |
 | starCnt | 별 개수 | Integer | X | 3 : 미쉐린 3스타 <br> 2 : 미쉐린 2스타 <br> 1 : 미쉐린 1스타 <br> 0 : 빕 구르망
-| year | 획득년도 | Integer | X |
 | ctprvnEngNm | 시도영문명 | String | X |
 
 #### URL 분기
@@ -63,9 +62,9 @@ API요청방식은 [공공데이터](https://www.data.go.kr/)의 openAPI 호출�
 
 #### 사용예시
 ```
-https://url.mlistapi.link/kr/michelin-list?row=100&starCnt=1&year=2024
+https://url.mlistapi.link/kr/michelin-list?row=100&starCnt=1
 ```
-해석) 대한민국에서 2024년도에 선정되었고 미쉐린별을 1개만 받은 레스토랑을 100건 조회
+해석) 대한민국에서 미쉐린별을 1개만 받은 레스토랑을 100건 조회
 
 <br>
 
