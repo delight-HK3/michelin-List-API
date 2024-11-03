@@ -10,19 +10,29 @@ import com.api.michelinAPI.entity.QMichelinJpEntity;
 import com.querydsl.core.types.dsl.BooleanExpression;
 import com.querydsl.jpa.impl.JPAQueryFactory;
 
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.PersistenceContext;
+import jakarta.transaction.Transactional;
+
 @Repository
 public class MichelinJpRepositoryImpl implements MichelinJpRepository{
     
     // QueryDSL
     private final JPAQueryFactory queryFactory;
     
-    MichelinJpRepositoryImpl(JPAQueryFactory queryFactory){   
+    // JPQL
+    @PersistenceContext // 영속성 컨텍스트 Bean 주입
+    private final EntityManager em;
+
+    MichelinJpRepositoryImpl(JPAQueryFactory queryFactory, EntityManager em){   
         this.queryFactory = queryFactory;
+        this.em = em;
     }
 
     // QMichelinKrEntity 등록
     QMichelinJpEntity michelinJpEntity = QMichelinJpEntity.michelinJpEntity;
     
+    // QueryDSL 방식
     @Override
     public List<MichelinJpEntity> findMichelinList(paramDTO dto){
         return queryFactory.from(michelinJpEntity) 
@@ -31,23 +41,83 @@ public class MichelinJpRepositoryImpl implements MichelinJpRepository{
                                 equalStarCnt(dto.getStarCnt())
                                 , equalFcltyNm(dto.getFcltyNm())
                                 , equalCtprvnEngNm(dto.getCtprvnEngNm())
+                                , equalSustainAbility(dto.getSustainAbility())
                             )
                             .limit(dto.getRow())
                             .fetch(); 
     }
-
-    // 별개수 체크 메서드
+    
+    // 별개수 체크 메서드 QueryDSL
     private BooleanExpression equalStarCnt(Integer starCnt){
         return starCnt != null ? michelinJpEntity.starCnt.eq(starCnt) : null;
     } 
 
-    // 레스토랑이름 체크 메서드
+    // 레스토랑이름 체크 메서드 QueryDSL
     private BooleanExpression equalFcltyNm(String fcltyNm){
         return fcltyNm != null ? michelinJpEntity.fcltyNm.eq(fcltyNm) : null;
     } 
 
-    // 시도영문명 체크 메서드
+    // 시도영문명 체크 메서드 QueryDSL
     private BooleanExpression equalCtprvnEngNm(String ctprvnEngNm){
         return ctprvnEngNm != null ? michelinJpEntity.ctprvnEngNm.eq(ctprvnEngNm) : null;
+    }
+    
+    // 년도 체크 메서드 QueryDSL
+    private BooleanExpression equalYear(Integer year) {
+        return year != null ? michelinJpEntity.year.eq(year) : null;
+    }
+
+    // 지속가능성 체크 메서드 QueryDSL
+    private BooleanExpression equalSustainAbility(Integer sustainAbility) {
+        return sustainAbility != null ? michelinJpEntity.sustainability.eq(sustainAbility) : null;
+    }
+
+    // JPQL 방식
+    @SuppressWarnings("unchecked")
+    @Override
+    @Transactional
+    public List<MichelinJpEntity> findMichelinJpList(paramDTO dto) {
+
+        String tableNm = dto.getYear() != null ? "michelin_list_jp_"+dto.getYear() : "michelin_list_jp";
+    
+        String query = "SELECT SEQ, MICHELIN_NM, FCLTY_NM, RDNMADR_NM, CTPRVN_ENG_NM,"
+                              + "FCLTY_LO, FCLTY_LA, STAR_CNT, EVALUATION_YEAR, FOOD_CATG, SUSTAINABILITY"
+                              + " FROM " + tableNm
+                              + " WHERE 1=1" 
+                              + equalStarCntNative(dto.getStarCnt()) 
+                              + equalFcltyNmNative(dto.getFcltyNm())
+                              + equalCtprvnEngNmNative(dto.getCtprvnEngNm())
+                              + equalYearNative(dto.getYear())
+                              + equalSustainAbilityNative(dto.getSustainAbility())
+                              + " LIMIT " + dto.getRow();
+
+        List<MichelinJpEntity> result = em.createNativeQuery(query, MichelinJpEntity.class).getResultList();
+
+        return result;
+    }
+
+    // 별개수 체크 메서드 네이티브
+    private String equalStarCntNative(Integer starCnt){
+        return starCnt != null ? " AND STAR_CNT = "+starCnt : "";
+    }
+
+    // 레스토랑이름 체크 메서드 네이티브
+    private String equalFcltyNmNative(String fcltyNm){
+        return fcltyNm != null ? " AND FCLTY_NM = "+fcltyNm : "";
     } 
+
+    // 시도영문명 체크 메서드 네이티브
+    private String equalCtprvnEngNmNative(String ctprvnEngNm){
+        return ctprvnEngNm != null ? " AND CTPRVN_ENG_NM = "+ctprvnEngNm : "";
+    }
+    
+    // 년도 체크 메서드 네이티브
+    private String equalYearNative(Integer year) {
+        return year != null ? " AND EVALUATION_YEAR = "+year : "";
+    }
+
+    // 지속가능성 체크 메서드 네이티브
+    private String equalSustainAbilityNative(Integer sustainAbility) {
+        return sustainAbility != null ? " AND SUSTAINABILITY = "+sustainAbility : "";
+    }
 }
