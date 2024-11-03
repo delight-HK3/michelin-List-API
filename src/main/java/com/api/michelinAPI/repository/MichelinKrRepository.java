@@ -10,6 +10,7 @@ import com.api.michelinAPI.entity.MichelinKrEntity;
 @Repository
 public interface MichelinKrRepository {
     
-    List<MichelinKrEntity> findMichelinList(paramDTO dto); // 미쉐린 대한민국 데이터 리스트
+    List<MichelinKrEntity> findMichelinList(paramDTO dto); // 미쉐린 대한민국 데이터 리스트 (QueryDSL)
 
+    List<MichelinKrEntity> findMichelinKrList(paramDTO dto); // 미쉐린 대한민국 데이터 리스트 (JPQL)
 }

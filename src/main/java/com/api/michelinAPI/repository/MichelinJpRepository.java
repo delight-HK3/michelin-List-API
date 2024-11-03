@@ -10,6 +10,7 @@ import com.api.michelinAPI.entity.MichelinJpEntity;
 @Repository
 public interface MichelinJpRepository {
 
-    List<MichelinJpEntity> findMichelinList(paramDTO dto); // 미쉐린 일본 데이터 리스트
+    List<MichelinJpEntity> findMichelinList(paramDTO dto); // 미쉐린 일본 데이터 리스트 (QueryDSL)
 
+    List<MichelinJpEntity> findMichelinJpList(paramDTO dto); // 미쉐린 일본 데이터 리스트 (JPQL)
 }

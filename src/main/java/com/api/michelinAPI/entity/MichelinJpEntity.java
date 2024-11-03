@@ -66,5 +66,5 @@ public class MichelinJpEntity {
 
     @Column(name = "SUSTAINABILITY")
     @Comment(value = "지속가능성")
-    private int sustainability;            // 지속가능성
+    private int sustainability;         // 지속가능성
 }

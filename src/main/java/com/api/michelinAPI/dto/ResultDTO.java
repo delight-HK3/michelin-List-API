@@ -37,7 +37,7 @@ public class ResultDTO {
                         .sustainability(entity.getSustainability())
                         .build();
     }
-    
+
     // MichelinJpEntity -> DTO (목록보기)
     public static ResultDTO toListJpDTO(MichelinJpEntity entity){
         return ResultDTO.builder()
@@ -53,4 +53,5 @@ public class ResultDTO {
                         .sustainability(entity.getSustainability())
                         .build();
     }
+
 }
