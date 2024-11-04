@@ -80,6 +80,7 @@ https://url.mlistapi.link/kr/michelin-list?row=100&starCnt=1
 
 ### 패치노트
 ---
+
 #### v.1.4 (2024.11.04)
 1. 일본 미쉐린 테이블에 1스타 정보를 추가 했습니다.
 2. 2025년도가 되어도 2024년 데이터가 확인가능하도록 수정 했습니다.
@@ -119,3 +120,4 @@ https://url.mlistapi.link/kr/michelin-list?row=100&starCnt=1
 ---
 #### v.1.0 (2024.10.19)
 1. 일본 미쉐린 데이터도 확인이 가능하도록 테이블을 추가했습니다.
+
