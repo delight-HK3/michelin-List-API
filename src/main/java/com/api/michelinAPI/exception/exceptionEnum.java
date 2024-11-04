@@ -22,7 +22,7 @@ public enum exceptionEnum {
 
     private final HttpStatus status;
     private final String code;
-    private String message;
+    private final String message;
 
     exceptionEnum(HttpStatus status, String code, String message) {
         this.status = status;
