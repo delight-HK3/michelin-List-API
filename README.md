@@ -37,7 +37,8 @@ API요청방식은 [공공데이터](https://www.data.go.kr/)의 openAPI 호출�
 | row | 불러올 행 수 | Integer | O |
 | fcltyNm | 레스토랑 이름 | String | X |
 | starCnt | 별 개수 | Integer | X | 3 : 미쉐린 3스타 <br> 2 : 미쉐린 2스타 <br> 1 : 미쉐린 1스타 <br> 0 : 빕 구르망
-| year | 시도영문명 | Integer | X |
+| year | 시도영문명 | Integer | X | 입력하지 않은경우 현재년도의 데이터가 출력됩니다. |
+| sustainAbility| 지속가능성| Integer | X | 1 : 지속가능성 존재 <br> 0 : 지속가능성 미존재 |
 | ctprvnEngNm | 시도영문명 | String | X |
 
 #### URL 분기
@@ -79,10 +80,11 @@ https://url.mlistapi.link/kr/michelin-list?row=100&starCnt=1
 
 ### 패치노트
 ---
-#### v.1.4 (추가예정)
-1. 일본 미쉐린 테이블에 1스타 정보를 추가예정입니다.
-2. 2025년도가 되어도 2024년 데이터가 확인가능하도록 수정예정입니다.
-3. 지속가능성 여부를 확인이 가능하도록 호출파라미터에 추가할 예정입니다.
+
+#### v.1.4 (2024.11.04)
+1. 일본 미쉐린 테이블에 1스타 정보를 추가 했습니다.
+2. 2025년도가 되어도 2024년 데이터가 확인가능하도록 수정 했습니다.
+3. 지속가능성 여부를 확인이 가능하도록 호출파라미터에 추가 했습니다.
 <br>
 
 ---
@@ -99,6 +101,7 @@ https://url.mlistapi.link/kr/michelin-list?row=100&starCnt=1
 | 역전회관 | 대한민국 | 빕 구르망 |
 | 유림면 | 대한민국 | 빕 구르망 |
 | 베이스 이즈 나이스 | 대한민국 | 빕 구르망 |
+
 <br>
 
 ---
@@ -117,3 +120,4 @@ https://url.mlistapi.link/kr/michelin-list?row=100&starCnt=1
 ---
 #### v.1.0 (2024.10.19)
 1. 일본 미쉐린 데이터도 확인이 가능하도록 테이블을 추가했습니다.
+

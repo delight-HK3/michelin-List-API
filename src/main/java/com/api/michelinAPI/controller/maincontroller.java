@@ -44,7 +44,7 @@ public class maincontroller {
     public List<ResultDTO> michelinKrList(paramDTO paramdto) {
 
         if(paramdto.getRow() == null){
-            new NullPointerException();
+            throw new NullPointerException();
         }
 
         return resultService.searchKrList(paramdto);
@@ -60,7 +60,7 @@ public class maincontroller {
     public List<ResultDTO> michelinJpList(paramDTO paramdto) {
 
         if(paramdto.getRow() == null){
-            new NullPointerException();
+            throw new NullPointerException();
         }
 
         return resultService.searchJpList(paramdto);

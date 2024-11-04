@@ -4,7 +4,6 @@ import java.util.List;
 
 import org.springframework.stereotype.Repository;
 
-import com.api.michelinAPI.dto.ResultDTO;
 import com.api.michelinAPI.dto.paramDTO;
 import com.api.michelinAPI.entity.MichelinKrEntity;
 import com.api.michelinAPI.entity.QMichelinKrEntity;
