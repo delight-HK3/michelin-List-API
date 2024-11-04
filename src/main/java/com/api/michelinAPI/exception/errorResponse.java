@@ -1,13 +1,20 @@
 package com.api.michelinAPI.exception;
 
-import lombok.AllArgsConstructor;
+import org.springframework.http.HttpStatus;
+
+import lombok.Builder;
 import lombok.Getter;
-import lombok.Setter;
+import lombok.ToString;
 
 @Getter
-@Setter
-@AllArgsConstructor
+@ToString
 public class errorResponse {
-    private final String code;
-	private final String message;
+    private String errorCode;
+	private String errorMessage;
+
+    @Builder
+    public errorResponse(HttpStatus status, String errorCode, String errorMessage){
+        this.errorCode = errorCode;
+        this.errorMessage = errorMessage;
+    }
 }

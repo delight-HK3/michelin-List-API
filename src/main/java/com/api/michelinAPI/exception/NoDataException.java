@@ -1,11 +1,17 @@
 package com.api.michelinAPI.exception;
 
+import lombok.Getter;
+
+@Getter
 public class NoDataException extends RuntimeException{
+    private exceptionEnum error;
+
     public NoDataException() {
         super();
     }
 
-    public NoDataException(String message, Throwable cause) {
-        super(message, cause);
+    public NoDataException(exceptionEnum e) {
+        super(e.getMessage());
+        this.error = e;
     }
 }

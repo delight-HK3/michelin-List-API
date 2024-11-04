@@ -1,6 +1,5 @@
 package com.api.michelinAPI.service;
 
-import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,6 +9,7 @@ import com.api.michelinAPI.dto.paramDTO;
 import com.api.michelinAPI.entity.MichelinJpEntity;
 import com.api.michelinAPI.entity.MichelinKrEntity;
 import com.api.michelinAPI.exception.NoDataException;
+import com.api.michelinAPI.exception.exceptionEnum;
 import com.api.michelinAPI.repository.MichelinJpRepositoryImpl;
 import com.api.michelinAPI.repository.MichelinKrRepositoryImpl;
 
@@ -35,7 +35,7 @@ public class ResultServiceImpl implements ResultService{
         //List<MichelinKrEntity> resultList = michelinKrRepository.findMichelinList(paramdto);
         List<MichelinKrEntity> resultList = michelinKrRepository.findMichelinKrList(paramdto);
 
-        if(resultList.size() == 0){ throw new NoDataException(); }
+        if(resultList.size() == 0){ throw new NoDataException(exceptionEnum.NODATA_ERROR); }
 
         for(int i = 0; i < resultList.size(); i++){
             ResultDTO dto = ResultDTO.toListKrDTO(resultList.get(i));
@@ -55,7 +55,7 @@ public class ResultServiceImpl implements ResultService{
         //List<MichelinJpEntity> resultList = michelinJpRepository.findMichelinList(paramdto);
         List<MichelinJpEntity> resultList = michelinJpRepository.findMichelinJpList(paramdto);
 
-        if(resultList.size() == 0){ throw new NoDataException(); }
+        if(resultList.size() == 0){ throw new NoDataException(exceptionEnum.NODATA_ERROR); }
         
         for(int i = 0; i < resultList.size(); i++){
             ResultDTO dto = ResultDTO.toListJpDTO(resultList.get(i));
