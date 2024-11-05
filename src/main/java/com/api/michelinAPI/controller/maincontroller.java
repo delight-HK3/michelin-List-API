@@ -11,6 +11,8 @@ import com.api.michelinAPI.dto.paramDTO;
 import com.api.michelinAPI.dto.ResultDTO;
 import com.api.michelinAPI.service.ResultService;
 
+import jakarta.validation.Valid;
+
 @RestController
 public class maincontroller {
 
@@ -41,11 +43,7 @@ public class maincontroller {
      * @return 
      */
     @RequestMapping(value="/kr/michelin-list", method=RequestMethod.GET)
-    public List<ResultDTO> michelinKrList(paramDTO paramdto) {
-
-        if(paramdto.getRow() == null){
-            throw new NullPointerException();
-        }
+    public List<ResultDTO> michelinKrList(@Valid paramDTO paramdto) {
 
         return resultService.searchKrList(paramdto);
     }
@@ -57,12 +55,8 @@ public class maincontroller {
      * @return
      */
     @RequestMapping(value="/jp/michelin-list", method=RequestMethod.GET)
-    public List<ResultDTO> michelinJpList(paramDTO paramdto) {
-
-        if(paramdto.getRow() == null){
-            throw new NullPointerException();
-        }
-
+    public List<ResultDTO> michelinJpList(@Valid paramDTO paramdto) {
+        
         return resultService.searchJpList(paramdto);
     }
 }
