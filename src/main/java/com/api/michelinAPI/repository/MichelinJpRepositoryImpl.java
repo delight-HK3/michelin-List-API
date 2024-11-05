@@ -38,10 +38,10 @@ public class MichelinJpRepositoryImpl implements MichelinJpRepository{
         return queryFactory.from(michelinJpEntity) 
                             .select(michelinJpEntity)
                             .where(
-                                equalStarCnt(dto.getStarCnt())
-                                , equalFcltyNm(dto.getFcltyNm())
-                                , equalCtprvnEngNm(dto.getCtprvnEngNm())
-                                , equalSustainAbility(dto.getSustainAbility())
+                                equalStarCnt(dto.getStarcnt())
+                                , equalFcltyNm(dto.getFcltynm())
+                                , equalCtprvnEngNm(dto.getCtprvnengnm())
+                                , equalSustainAbility(dto.getSustainability())
                             )
                             .limit(dto.getRow())
                             .fetch(); 
@@ -84,11 +84,11 @@ public class MichelinJpRepositoryImpl implements MichelinJpRepository{
                               + "FCLTY_LO, FCLTY_LA, STAR_CNT, EVALUATION_YEAR, FOOD_CATG, SUSTAINABILITY"
                               + " FROM " + tableNm
                               + " WHERE 1=1" 
-                              + equalStarCntNative(dto.getStarCnt()) 
-                              + equalFcltyNmNative(dto.getFcltyNm())
-                              + equalCtprvnEngNmNative(dto.getCtprvnEngNm())
+                              + equalStarCntNative(dto.getStarcnt()) 
+                              + equalFcltyNmNative(dto.getFcltynm())
+                              + equalCtprvnEngNmNative(dto.getCtprvnengnm())
                               + equalYearNative(dto.getYear())
-                              + equalSustainAbilityNative(dto.getSustainAbility())
+                              + equalSustainAbilityNative(dto.getSustainability())
                               + " LIMIT " + dto.getRow();
 
         List<MichelinJpEntity> result = em.createNativeQuery(query, MichelinJpEntity.class).getResultList();
@@ -103,12 +103,12 @@ public class MichelinJpRepositoryImpl implements MichelinJpRepository{
 
     // 레스토랑이름 체크 메서드 네이티브
     private String equalFcltyNmNative(String fcltyNm){
-        return fcltyNm != null ? " AND FCLTY_NM = "+fcltyNm : "";
+        return fcltyNm != null ? " AND FCLTY_NM = "+"\'"+ fcltyNm +"\'" : "";
     } 
 
     // 시도영문명 체크 메서드 네이티브
     private String equalCtprvnEngNmNative(String ctprvnEngNm){
-        return ctprvnEngNm != null ? " AND CTPRVN_ENG_NM = "+ctprvnEngNm : "";
+        return ctprvnEngNm != null ? " AND CTPRVN_ENG_NM = "+"\'"+ctprvnEngNm +"\'" : "";
     }
     
     // 년도 체크 메서드 네이티브
