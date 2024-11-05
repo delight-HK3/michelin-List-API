@@ -20,7 +20,7 @@ public class ResultDTO {
     private final double fcltyLa;         // 경도
     private final int starCnt;            // 별 개수
     private final int year;               // 획득년도
-    private final int sustainability;     // 지속가능성
+    private final int sustainAbility;     // 지속가능성
 
     // MichelinKrEntity -> DTO (목록보기)
     public static ResultDTO toListKrDTO(MichelinKrEntity entity){
@@ -34,7 +34,7 @@ public class ResultDTO {
                         .fcltyLa(entity.getFcltyLa())
                         .starCnt(entity.getStarCnt())
                         .year(entity.getYear())
-                        .sustainability(entity.getSustainability())
+                        .sustainAbility(entity.getSustainability())
                         .build();
     }
 
@@ -50,7 +50,7 @@ public class ResultDTO {
                         .fcltyLa(entity.getFcltyLa())
                         .starCnt(entity.getStarCnt())
                         .year(entity.getYear())
-                        .sustainability(entity.getSustainability())
+                        .sustainAbility(entity.getSustainability())
                         .build();
     }
 
