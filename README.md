@@ -35,11 +35,11 @@ API요청방식은 [공공데이터](https://www.data.go.kr/)의 openAPI 호출�
 | 파라미터명 | 설명 | 데이터타입 | 필수여부 | 기타 |
 | ------ | ------ | ----- | ----- | ----- |
 | row | 불러올 행 수 | Integer | O |
-| fcltyNm | 레스토랑 이름 | String | X |
-| starCnt | 별 개수 | Integer | X | 3 : 미쉐린 3스타 <br> 2 : 미쉐린 2스타 <br> 1 : 미쉐린 1스타 <br> 0 : 빕 구르망
+| fcltynm | 레스토랑 이름 | String | X |
+| starcnt | 별 개수 | Integer | X | 3 : 미쉐린 3스타 <br> 2 : 미쉐린 2스타 <br> 1 : 미쉐린 1스타 <br> 0 : 빕 구르망
 | year | 시도영문명 | Integer | X | 입력하지 않은경우 현재년도의 데이터가 출력됩니다. |
-| sustainAbility| 지속가능성| Integer | X | 1 : 지속가능성 존재 <br> 0 : 지속가능성 미존재 |
-| ctprvnEngNm | 시도영문명 | String | X |
+| sustainability | 지속가능성| Integer | X | 1 : 지속가능성 존재 <br> 0 : 지속가능성 미존재 |
+| ctprvnengnm | 시도영문명 | String | X |
 
 #### URL 분기
 | URL 분기 | 설명 |
@@ -60,11 +60,20 @@ API요청방식은 [공공데이터](https://www.data.go.kr/)의 openAPI 호출�
 | year | 획득년도 |
 | sustainability | 지속가능성 |
 
+#### 에러메세지 종류
+| 에러코드 | 에러메세지 |설명 | 
+| ------ | ------ | ------ |
+| 12 | PARAMETER TYPE ERROR | parameter 타입을 잘못 입력 |
+| 404 | NO RESOURCE ERROR | 지정되지 않은 URL을 입력 |
+| 11 | NO MANDATORY REQUEST PARAMETERS ERROR | 필수파라미터를 미입력 |
+| 02 | DB ERROR | 데이터베이스가 동작을 안하거나 잘못 된 쿼리 |
+| 03 | NODATA ERROR | 조회시 데이터 없는경우 |
+
 <br>
 
 #### 사용예시
 ```
-https://url.mlistapi.link/kr/michelin-list?row=100&starCnt=1
+https://url.mlistapi.link/kr/michelin-list?row=100&starcnt=1
 ```
 해석) 대한민국에서 미쉐린별을 1개만 받은 레스토랑을 100건 조회
 
@@ -81,12 +90,14 @@ https://url.mlistapi.link/kr/michelin-list?row=100&starCnt=1
 ### 패치노트
 ---
 
-#### v.1.5 (추가예정)
-1. 일본 미쉐린 테이블의 일부 레스토랑 이름을 수정 예정입니다.
-2. 일본 미쉐린 테이블에 빕 구르망 정보를 추가 예정입니다.
-3. 파라미터의 단어를 소문자로 변경예정입니다.
-4. 도시명 및 레스토랑 이름 검색시 제대로 검색않는 에러를 수정 예정입니다.
-5. 에러메세지 설명을 추가할 예정입니다.
+#### v.1.5 (2024.11.06)
+1. 일본 미쉐린 테이블의 일부 레스토랑 이름을 수정 했습니다.
+- (일부 레스토랑에 존재하는 특수문자 ` 를 ' ' 공백으로 변경 했습니다.)
+
+2. 일본 미쉐린 테이블에 빕 구르망 정보를 추가 했습니다.
+3. 파라미터의 단어를 소문자로 변경했습니다.
+4. 도시명 및 레스토랑 이름 검색시 제대로 검색않는 에러를 수정했습니다.
+5. 에러메세지 설명을 추가했습니다.
 <br>
 
 ---
