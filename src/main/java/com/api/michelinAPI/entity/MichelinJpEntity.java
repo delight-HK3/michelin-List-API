@@ -19,7 +19,7 @@ import lombok.NoArgsConstructor;
 @Getter
 @Entity
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
-@Table(name = "michelin_List_jp")
+//@Table(name = "michelin_List_jp")
 public class MichelinJpEntity {
 
     @Id
