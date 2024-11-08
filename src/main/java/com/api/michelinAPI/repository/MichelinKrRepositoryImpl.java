@@ -20,7 +20,7 @@ public class MichelinKrRepositoryImpl implements MichelinKrRepository{
     // QueryDSL
     private final JPAQueryFactory queryFactory;
     
-    // JPQL
+    // native SQL
     @PersistenceContext // 영속성 컨텍스트 Bean 주입
     private final EntityManager em;
 
