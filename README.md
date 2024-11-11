@@ -1,4 +1,4 @@
-# michelin List API
+# michelin API
 
 ### API 구성
 ```
