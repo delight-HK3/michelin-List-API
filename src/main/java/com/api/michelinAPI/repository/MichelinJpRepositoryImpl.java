@@ -3,6 +3,7 @@ package com.api.michelinAPI.repository;
 import java.util.List;
 
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.api.michelinAPI.dto.paramDTO;
 import com.api.michelinAPI.entity.MichelinJpEntity;
@@ -12,7 +13,6 @@ import com.querydsl.jpa.impl.JPAQueryFactory;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
-import jakarta.transaction.Transactional;
 
 @Repository
 public class MichelinJpRepositoryImpl implements MichelinJpRepository{
