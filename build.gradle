@@ -6,16 +6,6 @@ plugins {
 
 group = 'com.api'
 
-//Qclass가 생성될 곳을 정의한다.
-def querydslSrcDir = 'src/main/generated'
-sourceSets {
-  main {
-    java {
-      srcDirs += [ querydslSrcDir ]
-    }
-  }
-}
-
 java {
 	toolchain {
 		languageVersion = JavaLanguageVersion.of(17)
