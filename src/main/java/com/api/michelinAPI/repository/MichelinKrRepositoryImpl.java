@@ -12,7 +12,6 @@ import com.querydsl.core.types.dsl.BooleanExpression;
 import com.querydsl.jpa.impl.JPAQueryFactory;
 
 import jakarta.persistence.EntityManager;
-import jakarta.persistence.PersistenceContext;
 
 @Repository
 public class MichelinKrRepositoryImpl implements MichelinKrRepository{
@@ -21,7 +20,6 @@ public class MichelinKrRepositoryImpl implements MichelinKrRepository{
     private final JPAQueryFactory queryFactory;
     
     // native SQL
-    @PersistenceContext // 영속성 컨텍스트 Bean 주입
     private final EntityManager em;
 
     MichelinKrRepositoryImpl(JPAQueryFactory queryFactory, EntityManager em){   
