@@ -7,7 +7,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.api.michelinAPI.dto.paramDTO;
 import com.api.michelinAPI.entity.MichelinJpEntity;
-import com.api.michelinAPI.entity.QMichelinJpEntity;
+import static com.api.michelinAPI.entity.QMichelinJpEntity.michelinJpEntity;
 import com.querydsl.core.types.dsl.BooleanExpression;
 import com.querydsl.jpa.impl.JPAQueryFactory;
 
@@ -26,9 +26,6 @@ public class MichelinJpRepositoryImpl implements MichelinJpRepository{
         this.queryFactory = queryFactory;
         this.em = em;
     }
-
-    // QMichelinKrEntity 등록
-    QMichelinJpEntity michelinJpEntity = QMichelinJpEntity.michelinJpEntity;
     
     // QueryDSL 방식
     @Override
