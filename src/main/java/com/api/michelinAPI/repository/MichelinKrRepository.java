@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.stereotype.Repository;
 
+import com.api.michelinAPI.dto.ResultDTO;
 import com.api.michelinAPI.dto.paramDTO;
 import com.api.michelinAPI.entity.MichelinKrEntity;
 
@@ -12,5 +13,5 @@ public interface MichelinKrRepository {
     
     List<MichelinKrEntity> findMichelinList(paramDTO dto); // 미쉐린 대한민국 데이터 리스트 (QueryDSL)
 
-    List<MichelinKrEntity> findMichelinKrList(paramDTO dto); // 미쉐린 대한민국 데이터 리스트 (JPQL)
+    List<ResultDTO> findMichelinKrList(paramDTO dto); // 미쉐린 대한민국 데이터 리스트 (JPQL)
 }

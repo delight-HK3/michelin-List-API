@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.api.michelinAPI.dto.ResultDTO;
 import com.api.michelinAPI.dto.paramDTO;
 import com.api.michelinAPI.entity.MichelinJpEntity;
 import static com.api.michelinAPI.entity.QMichelinJpEntity.michelinJpEntity;
@@ -71,11 +72,11 @@ public class MichelinJpRepositoryImpl implements MichelinJpRepository{
     @SuppressWarnings("unchecked")
     @Override
     @Transactional
-    public List<MichelinJpEntity> findMichelinJpList(paramDTO dto) {
+    public List<ResultDTO> findMichelinJpList(paramDTO dto) {
 
         String tableNm = dto.getYear() != null ? "michelin_list_jp_"+dto.getYear() : "michelin_list_jp";
     
-        String query = "SELECT SEQ, MICHELIN_NM, FCLTY_NM, RDNMADR_NM, CTPRVN_ENG_NM,"
+        String query = "SELECT MICHELIN_NM, FCLTY_NM, RDNMADR_NM, CTPRVN_ENG_NM,"
                               + "FCLTY_LO, FCLTY_LA, STAR_CNT, EVALUATION_YEAR, FOOD_CATG, SUSTAINABILITY"
                               + " FROM " + tableNm
                               + " WHERE 1=1" 
@@ -85,7 +86,7 @@ public class MichelinJpRepositoryImpl implements MichelinJpRepository{
                               + equalSustainAbilityNative(dto.getSustainability())
                               + limitRowNative(dto.getRow());
 
-        List<MichelinJpEntity> result = em.createNativeQuery(query, MichelinJpEntity.class).getResultList();
+        List<ResultDTO> result = em.createNativeQuery(query, ResultDTO.class).getResultList();
 
         return result;
     }

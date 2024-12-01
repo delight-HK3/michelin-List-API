@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.api.michelinAPI.dto.ResultDTO;
 import com.api.michelinAPI.dto.paramDTO;
 import com.api.michelinAPI.entity.MichelinKrEntity;
 import static com.api.michelinAPI.entity.QMichelinKrEntity.michelinKrEntity;
@@ -71,10 +72,10 @@ public class MichelinKrRepositoryImpl implements MichelinKrRepository{
     @SuppressWarnings("unchecked")
     @Override
     @Transactional
-    public List<MichelinKrEntity> findMichelinKrList(paramDTO dto) {
+    public List<ResultDTO> findMichelinKrList(paramDTO dto) {
         String tableNm = dto.getYear() != null ? "michelin_list_kr_"+dto.getYear() : "michelin_list_kr";
         
-        String query = "SELECT SEQ, MICHELIN_NM, FCLTY_NM, RDNMADR_NM, CTPRVN_ENG_NM,"
+        String query = "SELECT MICHELIN_NM, FCLTY_NM, RDNMADR_NM, CTPRVN_ENG_NM,"
                               + "FCLTY_LO, FCLTY_LA, STAR_CNT, EVALUATION_YEAR, FOOD_CATG, SUSTAINABILITY"
                               + " FROM " + tableNm
                               + " WHERE 1=1" 
@@ -84,7 +85,7 @@ public class MichelinKrRepositoryImpl implements MichelinKrRepository{
                               + equalSustainAbilityNative(dto.getSustainability())
                               + limitRowNative(dto.getRow());
 
-        List<MichelinKrEntity> result = em.createNativeQuery(query, MichelinKrEntity.class).getResultList();
+        List<ResultDTO> result = em.createNativeQuery(query, ResultDTO.class).getResultList();
 
         return result;
     }
