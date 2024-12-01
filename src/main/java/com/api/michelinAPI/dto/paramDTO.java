@@ -1,6 +1,5 @@
 package com.api.michelinAPI.dto;
 
-import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
 import lombok.Getter;
 import lombok.Setter;
@@ -9,7 +8,6 @@ import lombok.Setter;
 @Setter
 public class paramDTO {
     
-    @NotNull
     private Integer row;            // 데이터 행 수
 
     private String fcltynm;         // 레스토랑이름

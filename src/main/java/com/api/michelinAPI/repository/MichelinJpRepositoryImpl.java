@@ -82,9 +82,8 @@ public class MichelinJpRepositoryImpl implements MichelinJpRepository{
                               + equalStarCntNative(dto.getStarcnt()) 
                               + equalFcltyNmNative(dto.getFcltynm())
                               + equalCtprvnEngNmNative(dto.getCtprvnengnm())
-                              + equalYearNative(dto.getYear())
                               + equalSustainAbilityNative(dto.getSustainability())
-                              + " LIMIT " + dto.getRow();
+                              + limitRowNative(dto.getRow());
 
         List<MichelinJpEntity> result = em.createNativeQuery(query, MichelinJpEntity.class).getResultList();
 
@@ -105,14 +104,14 @@ public class MichelinJpRepositoryImpl implements MichelinJpRepository{
     private String equalCtprvnEngNmNative(String ctprvnEngNm){
         return ctprvnEngNm != null ? " AND CTPRVN_ENG_NM = "+"\'"+ctprvnEngNm +"\'" : "";
     }
-    
-    // 년도 체크 메서드 네이티브
-    private String equalYearNative(Integer year) {
-        return year != null ? " AND EVALUATION_YEAR = "+year : "";
-    }
 
     // 지속가능성 체크 메서드 네이티브
     private String equalSustainAbilityNative(Integer sustainAbility) {
         return sustainAbility != null ? " AND SUSTAINABILITY = "+sustainAbility : "";
+    }
+
+    // 최대 출력 ROW 메서드
+    private String limitRowNative(Integer row){
+        return row != null ? " LIMIT " + row : "";
     }
 }
