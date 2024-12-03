@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.api.michelinAPI.dto.ResultDTO;
 import com.api.michelinAPI.dto.paramDTO;
 import com.api.michelinAPI.entity.MichelinJpEntity;
 import static com.api.michelinAPI.entity.QMichelinJpEntity.michelinJpEntity;
@@ -71,22 +72,21 @@ public class MichelinJpRepositoryImpl implements MichelinJpRepository{
     @SuppressWarnings("unchecked")
     @Override
     @Transactional
-    public List<MichelinJpEntity> findMichelinJpList(paramDTO dto) {
+    public List<ResultDTO> findMichelinJpList(paramDTO dto) {
 
         String tableNm = dto.getYear() != null ? "michelin_list_jp_"+dto.getYear() : "michelin_list_jp";
     
-        String query = "SELECT SEQ, MICHELIN_NM, FCLTY_NM, RDNMADR_NM, CTPRVN_ENG_NM,"
+        String query = "SELECT MICHELIN_NM, FCLTY_NM, RDNMADR_NM, CTPRVN_ENG_NM,"
                               + "FCLTY_LO, FCLTY_LA, STAR_CNT, EVALUATION_YEAR, FOOD_CATG, SUSTAINABILITY"
                               + " FROM " + tableNm
                               + " WHERE 1=1" 
                               + equalStarCntNative(dto.getStarcnt()) 
                               + equalFcltyNmNative(dto.getFcltynm())
                               + equalCtprvnEngNmNative(dto.getCtprvnengnm())
-                              + equalYearNative(dto.getYear())
                               + equalSustainAbilityNative(dto.getSustainability())
-                              + " LIMIT " + dto.getRow();
+                              + limitRowNative(dto.getRow());
 
-        List<MichelinJpEntity> result = em.createNativeQuery(query, MichelinJpEntity.class).getResultList();
+        List<ResultDTO> result = em.createNativeQuery(query, ResultDTO.class).getResultList();
 
         return result;
     }
@@ -105,14 +105,14 @@ public class MichelinJpRepositoryImpl implements MichelinJpRepository{
     private String equalCtprvnEngNmNative(String ctprvnEngNm){
         return ctprvnEngNm != null ? " AND CTPRVN_ENG_NM = "+"\'"+ctprvnEngNm +"\'" : "";
     }
-    
-    // 년도 체크 메서드 네이티브
-    private String equalYearNative(Integer year) {
-        return year != null ? " AND EVALUATION_YEAR = "+year : "";
-    }
 
     // 지속가능성 체크 메서드 네이티브
     private String equalSustainAbilityNative(Integer sustainAbility) {
         return sustainAbility != null ? " AND SUSTAINABILITY = "+sustainAbility : "";
+    }
+
+    // 최대 출력 ROW 메서드
+    private String limitRowNative(Integer row){
+        return row != null ? " LIMIT " + row : "";
     }
 }

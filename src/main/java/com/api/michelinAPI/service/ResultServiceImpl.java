@@ -31,19 +31,12 @@ public class ResultServiceImpl implements ResultService{
      */
     @Override
     public List<ResultDTO> searchKrList(paramDTO paramdto) {
-        List<ResultDTO> dtoList = new ArrayList<>();
         //List<MichelinKrEntity> resultList = michelinKrRepository.findMichelinList(paramdto);
-        List<MichelinKrEntity> resultList = michelinKrRepository.findMichelinKrList(paramdto);
+        List<ResultDTO> resultList = michelinKrRepository.findMichelinKrList(paramdto);
 
         if(resultList.size() == 0){ throw new NoDataException(exceptionEnum.NODATA_ERROR); }
 
-        for(int i = 0; i < resultList.size(); i++){
-            ResultDTO dto = ResultDTO.toListKrDTO(resultList.get(i));
-            dtoList.add(dto);
-        }
-
-        return dtoList;
-
+        return resultList;
     }
 
     /**
@@ -51,18 +44,19 @@ public class ResultServiceImpl implements ResultService{
      */
     @Override
     public List<ResultDTO> searchJpList(paramDTO paramdto) {
-        List<ResultDTO> dtoList = new ArrayList<>();
         //List<MichelinJpEntity> resultList = michelinJpRepository.findMichelinList(paramdto);
-        List<MichelinJpEntity> resultList = michelinJpRepository.findMichelinJpList(paramdto);
+        List<ResultDTO> resultList = michelinJpRepository.findMichelinJpList(paramdto);
 
         if(resultList.size() == 0){ throw new NoDataException(exceptionEnum.NODATA_ERROR); }
         
-        for(int i = 0; i < resultList.size(); i++){
-            ResultDTO dto = ResultDTO.toListJpDTO(resultList.get(i));
-            dtoList.add(dto);
-        }
+        /*
+            for(int i = 0; i < resultList.size(); i++){
+                ResultDTO dto = ResultDTO.toListJpDTO(resultList.get(i));
+                dtoList.add(dto);
+            }
+        */
 
-        return dtoList;
+        return resultList;
     }
 
 }
