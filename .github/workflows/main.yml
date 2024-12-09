@@ -14,8 +14,9 @@ env:
 
 jobs:
   build:
-    name: Amazon Linux 2
+    name: build
     runs-on: ubuntu-latest
+    
     steps:
     - name: 브랜치 이동
       uses: actions/checkout@v3
@@ -25,7 +26,7 @@ jobs:
     - name: JDK 17 설치
       uses: actions/setup-java@v3
       with:
-        java-version: '17'
+        java-version: 17
         distribution: 'corretto'
         
     - name: gradlew에 실행 권한 부여
@@ -34,20 +35,6 @@ jobs:
       
     - name: Build with Gradle
       run: ./gradlew build
-      
-    - name: Make zip file
-      run: zip -r ./$GITHUB_SHA.zip .
       shell: bash
       
-    - name: AWS credential 설정
-      uses: aws-actions/configure-aws-credentials@v1
-      with:
-        aws-region: ${{ env.AWS_REGION }}
-        aws-access-key-id: ${{ secrets.DEV_ACCESS_KEY }}
-        aws-secret-access-key: ${{ secrets.DEV_SECRET_KEY }}
-        
-    - name: Upload to S3
-      run: aws s3 cp --region $AWS_REGION ./$GITHUB_SHA.zip s3://$AWS_S3_BUCKET/$GITHUB_SHA.zip
-
-
         
