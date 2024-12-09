@@ -50,7 +50,7 @@ jobs:
       run: ./gradlew clean build
 
     - name: Make zip file
-      run: zip -r ./$GITHUB_SHA.zip .
+      run: zip -r ./mlistmain.zip .
       shell: bash
 
     - name: Configure AWS credentials
@@ -61,5 +61,5 @@ jobs:
         aws-region: ${{ env.AWS_REGION }}
         
     - name: Upload to S3
-      run: aws s3 cp --region ${{ env.AWS_REGION }} ./$GITHUB_SHA.zip s3://${{ env.AWS_S3_BUCKET }}/$GITHUB_SHA.zip  
+      run: aws s3 cp --region ${{ env.AWS_REGION }} ./mlistmain.zip s3://${{ env.AWS_S3_BUCKET }}/mlistmain.zip  
         
