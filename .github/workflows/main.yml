@@ -6,12 +6,6 @@ on:
       - master
   workflow_dispatch:
 
-env:
-  AWS_REGION: ap-northeast-2
-  AWS_S3_BUCKET: mlists3
-  AWS_CODE_DEPLOY_APPLICATION: michelin-list-dev
-  AWS_CODE_DEPLOY_GROUP: mlist-dev-group
-
 jobs:
   build:
     name: build
@@ -27,7 +21,6 @@ jobs:
       uses: actions/setup-java@v3
       with:
         java-version: 17
-        distribution: 'corretto'
         
     - name: gradlew에 실행 권한 부여
       run: chmod +x ./gradlew
