@@ -1,4 +1,4 @@
-name: gyunny-action
+name: mlist build
 
 on:
   push:
