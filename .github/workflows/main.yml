@@ -1,9 +1,10 @@
-name: mlist dev
-run-name: Running
+name: gyunny-action
+
 on:
   push:
-    branches: 
-      - main
+    branches:
+      - master
+  workflow_dispatch:
 
 env:
   AWS_REGION: ap-northeast-2
@@ -12,8 +13,9 @@ env:
   AWS_CODE_DEPLOY_GROUP: mlist-dev-group
 
 jobs:
-  build-with-gradle:
-    runs-on: Amazon Linux 2
+  build:
+    name: Amazon Linux 2
+    runs-on: ubuntu-latest
     steps:
     - name: 브랜치 이동
       uses: actions/checkout@v3
@@ -31,7 +33,7 @@ jobs:
       shell: bash
       
     - name: 프로젝트 빌드
-      run: ./gradlew clean build -x michelinAPI
+      run: ./gradlew build
       shell: bash
 
     - name: Make zip file
