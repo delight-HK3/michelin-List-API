@@ -32,10 +32,19 @@ jobs:
     - name: gradlew에 실행 권한 부여
       run: chmod +x ./gradlew
       shell: bash
-      
+
+    - name: cache
+      uses: actions/cache@v2
+      with:
+        path: |
+          ~/.gradle/caches
+          ~/.gradle/wrapper
+        key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
+        restore-keys: |
+          ${{ runner.os }}-gradle-
+    
     - name: Build with Gradle
-      run: ./gradlew clean build
-      shell: bash
+      run: ./gradlew --debug build
 
     - name: Make zip file
       run: zip -r ./$GITHUB_SHA.zip .
