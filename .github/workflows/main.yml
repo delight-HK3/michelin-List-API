@@ -35,22 +35,12 @@ jobs:
     - name: gradlew에 실행 권한 부여
       run: chmod +x ./gradlew
       shell: bash
-
-    - name: cache 비우기
-      uses: actions/cache@v2
-      with:
-        path: |
-          ~/.gradle/caches
-          ~/.gradle/wrapper
-        key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
-        restore-keys: |
-          ${{ runner.os }}-gradle-
     
     - name: Build with Gradle
       run: ./gradlew clean build
 
     - name: Make zip file
-      run: zip -r ./michelin.zip .
+      run: zip -r ./${{ github.sha }}.zip .
       shell: bash
 
     - name: Configure AWS credentials
