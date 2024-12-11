@@ -61,7 +61,7 @@ jobs:
         aws-region: ${{ env.AWS_REGION }}
         
     - name: Upload to S3
-      run: aws deploy push --application-name ${{ env.AWS_CODE_DEPLOY_APPLICATION }} --ignore-hidden-files --s3-location s3://${{ env.AWS_S3_BUCKET }}/${{ github.sha }}.zip --source .
+      run: aws s3 cp --region ${{ env.AWS_REGION }} ./${{ github.sha }}.zip s3://${{ env.AWS_S3_BUCKET }}/${{ github.sha }}.zip
     
     - name: EC2에 배포
       run: aws deploy create-deployment 
