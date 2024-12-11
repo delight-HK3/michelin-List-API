@@ -40,7 +40,7 @@ jobs:
       run: ./gradlew clean build
 
     - name: Make zip file
-      run: zip -r ./${{ github.sha }}.zip .
+      run: zip -r ./application.zip .
       shell: bash
 
     - name: Configure AWS credentials
@@ -51,11 +51,11 @@ jobs:
         aws-region: ${{ env.AWS_REGION }}
         
     - name: Upload to S3
-      run: aws s3 cp --region ${{ env.AWS_REGION }} ./${{ github.sha }}.zip s3://${{ env.AWS_S3_BUCKET }}/${{ github.sha }}.zip
+      run: aws s3 cp --region ${{ env.AWS_REGION }} ./application.zip s3://${{ env.AWS_S3_BUCKET }}/application.zip
     
     - name: EC2에 배포
       run: aws deploy create-deployment 
         --application-name ${{ env.AWS_CODE_DEPLOY_APPLICATION }} 
         --deployment-config-name CodeDeployDefault.AllAtOnce 
         --deployment-group-name ${{ env.AWS_CODE_DEPLOY_GROUP }} 
-        --s3-location bucket=${{ env.AWS_S3_BUCKET }},key=${{ github.sha }}.zip,bundleType=zip
+        --s3-location bucket=${{ env.AWS_S3_BUCKET }},key=application.zip,bundleType=zip
