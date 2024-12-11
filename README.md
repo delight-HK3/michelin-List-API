@@ -27,6 +27,8 @@ AWS OS : Amazon Linux 2 Kernel 5.10 AMI 2.0.20241014.0 x86_64 HVM gp2
 따로 조사를 해야만 알 수 있습니다. 거기서 이렇게 API로 만들고 데이터를 관리하면 앞으로의 활용가치가 분명생길 것 이라고 판단하여 개발하게 되었습니다.
 API요청방식은 [공공데이터](https://www.data.go.kr/)의 openAPI 호출방식과 유사하게 HTTP API방식으로 설계했습니다, 현재는 대한민국 데이터만 출력이 되지만
 앞으로 일본 및 아시아권 데이터출력이 현재방향입니다.
+
+개발일지 : https://velog.io/@half-phycho/series/michelin-API
 <br><br>
 
 ### API 사용가이드
