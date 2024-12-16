@@ -73,14 +73,6 @@ API요청방식은 [공공데이터](https://www.data.go.kr/)의 openAPI 호출�
 
 <br>
 
-#### 사용예시
-```
-https://url.mlistapi.link/kr/michelin-list?row=100&starcnt=1
-```
-해석) 대한민국에서 미쉐린별을 1개만 받은 레스토랑을 100건 조회
-
-<br>
-
 ### 참고자료
 * 미쉐린 레스토랑 가이드(데이터 수집) : <https://guide.michelin.com/kr/ko> 
 * AWS 구축 및 기본 세팅 : <https://velog.io/@osmdark/1.AWS%EC%84%9C%EB%B2%84-%EA%B5%AC%EC%B6%95%ED%95%98%EA%B8%B0>
@@ -90,6 +82,11 @@ https://url.mlistapi.link/kr/michelin-list?row=100&starcnt=1
 <br>
 
 ### 패치노트
+---
+#### 서비스 종료
+미쉐린 가이드의 데이터를 공공 또는 영리 목적으로 자료를 복제, 공개 게시, 공연, 배포, 이용하는 행위가 금지되있다라는 조항이 있기 때문에
+법적으로 문제가 생길요소가 있어 서비스를 중지합니다.
+
 ---
 #### v.1.6 (2024.12.03)
 1. 필수 파라미터인 ```row```를 필수에서 선택으로 변경했습니다.
